@@ -1,0 +1,22 @@
+Dataset:
+Foreign Immigration Data  based on the incoming country and their arriving states in Malaysia
+wages by country of origin
+Domain:
+Population
+data available:
+states, country, time of arrival, arrivals male, arrivals female
+
+Idioms possible:
+1 flow map
+line chart to display over time changes between countries
+pie chart to show distribution of male and female arrivals in each flow
+a square bubble chart to show frequencies of arrival by states
+
+
+weakness of this:
+country map might be redundant (too big and some country don't have incoming at one time)
+lack of specification during a time ( in certain dates how many come to what states, might be possible with line chart tooltip): heatmap might be possible but ended up not focusing on the map?
+
+TRIZ is a problem-solving methodology that leverages a set of pre-existing solutions, organized into 40 distinct principles, to address various engineering challenges. Applying these principles often involves examining numerous patents filled with complex terminology, a task that can be both time-consuming and labor-intensive. This research aims to automate and streamline the process by utilizing Natural Language Processing (NLP) and Large Language Models (LLMs). The objective is to improve the efficiency and accuracy of interpreting historical patents, ultimately removing the bottlenecks associated with manual review of patent documents.
+
+

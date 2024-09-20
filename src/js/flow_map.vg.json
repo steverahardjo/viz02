@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 500,
+  "data": {
+    "url": "path/to/your/country.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "lookup": "country_id",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/vega/vega-datasets/master/data/world-110m.json",
+          "format": {"type": "topojson", "feature": "countries"}
+        },
+        "key": "id",
+        "fields": ["name"]
+      }
+    }
+  ],
+  "projection": {
+    "type": "equalEarth"
+  },
+  "mark": "geoshape",
+  "encoding": {
+    "color": {
+      "condition": {
+        "test": "datum.name === 'Malaysia'",
+        "value": "orange"
+      },
+      "value": "lightgray"
+    }
+  }
+}
