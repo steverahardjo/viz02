@@ -2,34 +2,59 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 800,
   "height": 500,
-  "data": {
-    "url": "path/to/your/country.csv",
-    "format": {"type": "csv"}
-  },
-  "transform": [
+  "layer": [
     {
-      "lookup": "country_id",
-      "from": {
-        "data": {
-          "url": "https://raw.githubusercontent.com/vega/vega-datasets/master/data/world-110m.json",
-          "format": {"type": "topojson", "feature": "countries"}
-        },
-        "key": "id",
-        "fields": ["name"]
+      "data": {
+        "url": "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/world-110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "projection": {
+        "type": "mercator"
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#b0bec5",
+        "stroke": "white"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/grouped_arrivals.csv",
+        "format": {"type": "csv"}
+      },
+      "mark": "circle",
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "size": {"value": 50},
+        "color": {"value": "red"}
+      }
+    },
+    {
+      "mark": "circle",
+      "encoding": {
+        "longitude": {"value": 101.9758},
+        "latitude": {"value": 4.2105},
+        "size": {"value": 100},
+        "color": {"value": "blue"} 
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/grouped_arrivals.csv",
+        "format": {"type": "csv"}
+      },
+      "mark": "rule",
+      "encoding": {
+        "longitude": {"field": "longitude"},
+        "latitude": {"field": "latitude"},
+        "longitude2": {"value": 101.9758},
+        "latitude2": {"value": 4.2105}
       }
     }
-  ],
-  "projection": {
-    "type": "equalEarth"
-  },
-  "mark": "geoshape",
-  "encoding": {
-    "color": {
-      "condition": {
-        "test": "datum.name === 'Malaysia'",
-        "value": "orange"
-      },
-      "value": "lightgray"
-    }
-  }
+  ]
 }
+
