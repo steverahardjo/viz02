@@ -1,7 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title":"Flow map of Foreigner to Malaysia",
   "width": 800,
-  "height": 700,
+  "height": 500,
   "layer": [
     {
       "data": {
@@ -16,7 +17,7 @@
       },
       "mark": {
         "type": "geoshape",
-        "fill": "#b0bec5",
+        "fill": "lightgray",
         "stroke": "white"
       }
     },
@@ -27,14 +28,24 @@
       },
       "transform": [
         {
-          "calculate": "year(datum.date)",
-          "as": "Yr"
+          "lookup": "country", 
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/grouped_arrivals.csv",
+              "format": {"type": "csv"}
+            },
+            "key": "country",
+            "fields": ["longitude", "latitude"]
+          },
+          "as": ["origin_longitude", "origin_latitude"]
         },
         {
-          "aggregate": [
-            {"op": "sum", "field": "arrivals", "as": "sum_arrivals"}
-          ],
-          "groupby": ["Yr", "country"]
+          "calculate": "101.9758", 
+          "as": "dest_longitude"
+        },
+        {
+          "calculate": "4.2105", 
+          "as": "dest_latitude"
         }
       ],
       "params": [
@@ -42,33 +53,39 @@
           "name": "dateSelection",
           "select": {
             "type": "point",
-            "fields": ["Yr"]
+            "fields": ["date"]
           },
           "bind": {
             "input": "range",
             "min": 0,
-            "max": 26,
+            "max": 26, 
             "step": 1,
-            "name": "Select Year and Month"
+            "name": "Select Date & Month"
           }
         }
       ],
-      "mark": "circle",
+      "projection": {
+        "type": "mercator"
+      },
+      "mark": "rule",
       "encoding": {
-        "longitude": {"field": "longitude"},
-        "latitude": {"field": "latitude"},
-        "size": {
-          "condition": {
-            "param": "dateSelection",
-            "value": 10
-          },
-          "value": 0
+        "longitude": {
+          "field": "origin_longitude",
+          "type": "quantitative"
         },
-        "color": {"value": "blue"}
+        "latitude": {
+          "field": "origin_latitude",
+          "type": "quantitative"
+        },
+        "longitude2": {"field": "dest_longitude"},
+        "latitude2": {"field": "dest_latitude"},
+        "color": {"value": "red"}
       }
     }
-  ]
+  ],
+    "background": "#e0f7fa"
 }
+
 
 
 
