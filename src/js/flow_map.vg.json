@@ -1,8 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title":"Flow map of Foreigner to Malaysia",
+  "title": "Flow Map of Foreigners to Malaysia",
   "width": 800,
-  "height": 500,
+  "height": 700,
+  "background": "#e0f7fa",
   "layer": [
     {
       "data": {
@@ -24,15 +25,19 @@
     {
       "data": {
         "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/grouped_arrivals.csv",
-        "format": {"type": "csv"}
+        "format": {
+          "type": "csv"
+        }
       },
       "transform": [
         {
-          "lookup": "country", 
+          "lookup": "country",
           "from": {
             "data": {
               "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/grouped_arrivals.csv",
-              "format": {"type": "csv"}
+              "format": {
+                "type": "csv"
+              }
             },
             "key": "country",
             "fields": ["longitude", "latitude"]
@@ -51,6 +56,7 @@
       "params": [
         {
           "name": "dateSelection",
+          "value":"2020-01-01",
           "select": {
             "type": "point",
             "fields": ["date"]
@@ -58,7 +64,7 @@
           "bind": {
             "input": "range",
             "min": 0,
-            "max": 26, 
+            "max": 26,
             "step": 1,
             "name": "Select Date & Month"
           }
@@ -77,17 +83,25 @@
           "field": "origin_latitude",
           "type": "quantitative"
         },
-        "longitude2": {"field": "dest_longitude"},
-        "latitude2": {"field": "dest_latitude"},
-        "color": {"value": "red"}
+        "longitude2": {
+          "field": "dest_longitude"
+        },
+        "latitude2": {
+          "field": "dest_latitude"
+        },
+        "color": {
+          "value": "red"
+        },
+        "size": {
+          "field": "arrivals",
+          "type": "quantitative",
+          "title": "Number of Arrivals",
+          "scale": {
+            "domain": [9, 1500000],
+            "range": [1, 7]
+          }
+        }
       }
     }
-  ],
-    "background": "#e0f7fa"
+  ]
 }
-
-
-
-
-
-
