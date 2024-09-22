@@ -18,13 +18,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-  <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
-
-
 </head>
 
 <body>
-    <h1 style="text-align: center;">Foreign Arrival to Malaysia (Jan 2020 - Jun 2024)</h1>
-    <div id="vis" style="width: 600px; height: 400px;"></div>
+  <h1 style="text-align: center;">Foreign Arrival to Malaysia (Jan 2020 - Jun 2024)</h1>
+
+  <!-- Container for the Vega-Lite visualization -->
+  <div id="vis" class= "vis-container" style="width: 600px; height: 400px;"></div>
+
+
+  <script type="text/javascript">
+    var specVis1 = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/flow_map.vg.json";
+
+    vegaEmbed('#vis', specVis1, { "actions": false });
+    
+
+  </script>
 </body>
+
+</html>
+
