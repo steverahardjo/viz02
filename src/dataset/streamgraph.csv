@@ -1,872 +1,272 @@
-,date,sub-region,arrivals
-0,Apr 2020,Australia and New Zealand,6.0
-1,Apr 2020,Eastern Asia,10.0
-2,Apr 2020,Eastern Europe,2.0
-3,Apr 2020,Northern Africa,3.0
-4,Apr 2020,Northern America,6.0
-5,Apr 2020,Northern Europe,4.0
-6,Apr 2020,South-eastern Asia,462.0
-7,Apr 2020,Southern Asia,14.0
-8,Apr 2020,Southern Europe,2.0
-9,Apr 2020,Sub-Saharan Africa,1.0
-10,Apr 2020,Western Asia,2.0
-11,Apr 2020,Western Europe,5.0
-12,Apr 2021,Australia and New Zealand,28.0
-13,Apr 2021,Central Asia,9.0
-14,Apr 2021,Eastern Asia,145.0
-15,Apr 2021,Eastern Europe,20.0
-16,Apr 2021,Latin America and the Caribbean,5.0
-17,Apr 2021,Melanesia,1.0
-18,Apr 2021,Micronesia,1.0
-19,Apr 2021,Northern Africa,39.0
-20,Apr 2021,Northern America,52.0
-21,Apr 2021,Northern Europe,19.0
-22,Apr 2021,South-eastern Asia,791.0
-23,Apr 2021,Southern Asia,158.0
-24,Apr 2021,Southern Europe,10.0
-25,Apr 2021,Sub-Saharan Africa,13.0
-26,Apr 2021,Western Asia,20.0
-27,Apr 2021,Western Europe,22.0
-28,Apr 2022,Australia and New Zealand,495.0
-29,Apr 2022,Central Asia,34.0
-30,Apr 2022,Eastern Asia,564.0
-31,Apr 2022,Eastern Europe,46.0
-32,Apr 2022,Latin America and the Caribbean,16.0
-33,Apr 2022,Melanesia,5.0
-34,Apr 2022,Micronesia,2.0
-35,Apr 2022,Northern Africa,88.0
-36,Apr 2022,Northern America,392.0
-37,Apr 2022,Northern Europe,194.0
-38,Apr 2022,Polynesia,13.0
-39,Apr 2022,South-eastern Asia,7354.0
-40,Apr 2022,Southern Asia,1080.0
-41,Apr 2022,Southern Europe,49.0
-42,Apr 2022,Sub-Saharan Africa,24.0
-43,Apr 2022,Western Asia,99.0
-44,Apr 2022,Western Europe,179.0
-45,Apr 2023,Australia and New Zealand,1714.0
-46,Apr 2023,Central Asia,65.0
-47,Apr 2023,Eastern Asia,3236.0
-48,Apr 2023,Eastern Europe,224.0
-49,Apr 2023,Latin America and the Caribbean,34.0
-50,Apr 2023,Melanesia,16.0
-51,Apr 2023,Micronesia,3.0
-52,Apr 2023,Northern Africa,90.0
-53,Apr 2023,Northern America,1052.0
-54,Apr 2023,Northern Europe,419.0
-55,Apr 2023,Polynesia,4.0
-56,Apr 2023,South-eastern Asia,16007.0
-57,Apr 2023,Southern Asia,2289.0
-58,Apr 2023,Southern Europe,112.0
-59,Apr 2023,Sub-Saharan Africa,50.0
-60,Apr 2023,Western Asia,90.0
-61,Apr 2023,Western Europe,427.0
-62,Apr 2024,Australia and New Zealand,1488.0
-63,Apr 2024,Central Asia,198.0
-64,Apr 2024,Eastern Asia,5149.0
-65,Apr 2024,Eastern Europe,230.0
-66,Apr 2024,Latin America and the Caribbean,40.0
-67,Apr 2024,Melanesia,26.0
-68,Apr 2024,Micronesia,3.0
-69,Apr 2024,Northern Africa,147.0
-70,Apr 2024,Northern America,1249.0
-71,Apr 2024,Northern Europe,480.0
-72,Apr 2024,Polynesia,5.0
-73,Apr 2024,South-eastern Asia,21783.0
-74,Apr 2024,Southern Asia,2486.0
-75,Apr 2024,Southern Europe,123.0
-76,Apr 2024,Sub-Saharan Africa,58.0
-77,Apr 2024,Western Asia,116.0
-78,Apr 2024,Western Europe,548.0
-79,Aug 2020,Australia and New Zealand,48.0
-80,Aug 2020,Central Asia,5.0
-81,Aug 2020,Eastern Asia,82.0
-82,Aug 2020,Eastern Europe,17.0
-83,Aug 2020,Latin America and the Caribbean,14.0
-84,Aug 2020,Melanesia,1.0
-85,Aug 2020,Northern Africa,9.0
-86,Aug 2020,Northern America,64.0
-87,Aug 2020,Northern Europe,31.0
-88,Aug 2020,South-eastern Asia,475.0
-89,Aug 2020,Southern Asia,83.0
-90,Aug 2020,Southern Europe,8.0
-91,Aug 2020,Sub-Saharan Africa,4.0
-92,Aug 2020,Western Asia,8.0
-93,Aug 2020,Western Europe,27.0
-94,Aug 2021,Australia and New Zealand,56.0
-95,Aug 2021,Central Asia,8.0
-96,Aug 2021,Eastern Asia,97.0
-97,Aug 2021,Eastern Europe,27.0
-98,Aug 2021,Latin America and the Caribbean,6.0
-99,Aug 2021,Northern Africa,28.0
-100,Aug 2021,Northern America,88.0
-101,Aug 2021,Northern Europe,68.0
-102,Aug 2021,South-eastern Asia,772.0
-103,Aug 2021,Southern Asia,18.0
-104,Aug 2021,Southern Europe,17.0
-105,Aug 2021,Sub-Saharan Africa,10.0
-106,Aug 2021,Western Asia,29.0
-107,Aug 2021,Western Europe,64.0
-108,Aug 2022,Australia and New Zealand,908.0
-109,Aug 2022,Central Asia,78.0
-110,Aug 2022,Eastern Asia,1596.0
-111,Aug 2022,Eastern Europe,101.0
-112,Aug 2022,Latin America and the Caribbean,22.0
-113,Aug 2022,Melanesia,14.0
-114,Aug 2022,Micronesia,1.0
-115,Aug 2022,Northern Africa,156.0
-116,Aug 2022,Northern America,884.0
-117,Aug 2022,Northern Europe,360.0
-118,Aug 2022,Polynesia,2.0
-119,Aug 2022,South-eastern Asia,14335.0
-120,Aug 2022,Southern Asia,2122.0
-121,Aug 2022,Southern Europe,220.0
-122,Aug 2022,Sub-Saharan Africa,31.0
-123,Aug 2022,Western Asia,198.0
-124,Aug 2022,Western Europe,471.0
-125,Aug 2023,Australia and New Zealand,1316.0
-126,Aug 2023,Central Asia,110.0
-127,Aug 2023,Eastern Asia,5082.0
-128,Aug 2023,Eastern Europe,197.0
-129,Aug 2023,Latin America and the Caribbean,36.0
-130,Aug 2023,Melanesia,30.0
-131,Aug 2023,Micronesia,11.0
-132,Aug 2023,Northern Africa,331.0
-133,Aug 2023,Northern America,1202.0
-134,Aug 2023,Northern Europe,490.0
-135,Aug 2023,Polynesia,4.0
-136,Aug 2023,South-eastern Asia,19172.0
-137,Aug 2023,Southern Asia,2882.0
-138,Aug 2023,Southern Europe,365.0
-139,Aug 2023,Sub-Saharan Africa,56.0
-140,Aug 2023,Western Asia,283.0
-141,Aug 2023,Western Europe,634.0
-142,Dec 2020,Australia and New Zealand,18.0
-143,Dec 2020,Central Asia,2.0
-144,Dec 2020,Eastern Asia,101.0
-145,Dec 2020,Eastern Europe,13.0
-146,Dec 2020,Latin America and the Caribbean,4.0
-147,Dec 2020,Melanesia,3.0
-148,Dec 2020,Micronesia,8.0
-149,Dec 2020,Northern Africa,12.0
-150,Dec 2020,Northern America,26.0
-151,Dec 2020,Northern Europe,15.0
-152,Dec 2020,South-eastern Asia,680.0
-153,Dec 2020,Southern Asia,71.0
-154,Dec 2020,Southern Europe,7.0
-155,Dec 2020,Sub-Saharan Africa,4.0
-156,Dec 2020,Western Asia,6.0
-157,Dec 2020,Western Europe,11.0
-158,Dec 2021,Australia and New Zealand,81.0
-159,Dec 2021,Central Asia,19.0
-160,Dec 2021,Eastern Asia,185.0
-161,Dec 2021,Eastern Europe,25.0
-162,Dec 2021,Latin America and the Caribbean,6.0
-163,Dec 2021,Melanesia,3.0
-164,Dec 2021,Northern Africa,98.0
-165,Dec 2021,Northern America,103.0
-166,Dec 2021,Northern Europe,75.0
-167,Dec 2021,South-eastern Asia,1174.0
-168,Dec 2021,Southern Asia,953.0
-169,Dec 2021,Southern Europe,14.0
-170,Dec 2021,Sub-Saharan Africa,16.0
-171,Dec 2021,Western Asia,62.0
-172,Dec 2021,Western Europe,44.0
-173,Dec 2022,Australia and New Zealand,1941.0
-174,Dec 2022,Central Asia,106.0
-175,Dec 2022,Eastern Asia,1947.0
-176,Dec 2022,Eastern Europe,219.0
-177,Dec 2022,Latin America and the Caribbean,24.0
-178,Dec 2022,Melanesia,19.0
-179,Dec 2022,Micronesia,2.0
-180,Dec 2022,Northern Africa,100.0
-181,Dec 2022,Northern America,1002.0
-182,Dec 2022,Northern Europe,368.0
-183,Dec 2022,Polynesia,3.0
-184,Dec 2022,South-eastern Asia,18823.0
-185,Dec 2022,Southern Asia,2158.0
-186,Dec 2022,Southern Europe,87.0
-187,Dec 2022,Sub-Saharan Africa,60.0
-188,Dec 2022,Western Asia,102.0
-189,Dec 2022,Western Europe,365.0
-190,Dec 2023,Australia and New Zealand,2671.0
-191,Dec 2023,Central Asia,128.0
-192,Dec 2023,Eastern Asia,4752.0
-193,Dec 2023,Eastern Europe,260.0
-194,Dec 2023,Latin America and the Caribbean,40.0
-195,Dec 2023,Melanesia,39.0
-196,Dec 2023,Micronesia,3.0
-197,Dec 2023,Northern Africa,170.0
-198,Dec 2023,Northern America,1789.0
-199,Dec 2023,Northern Europe,533.0
-200,Dec 2023,Polynesia,6.0
-201,Dec 2023,South-eastern Asia,22721.0
-202,Dec 2023,Southern Asia,2809.0
-203,Dec 2023,Southern Europe,140.0
-204,Dec 2023,Sub-Saharan Africa,95.0
-205,Dec 2023,Western Asia,160.0
-206,Dec 2023,Western Europe,543.0
-207,Feb 2020,Australia and New Zealand,1124.0
-208,Feb 2020,Central Asia,155.0
-209,Feb 2020,Eastern Asia,2841.0
-210,Feb 2020,Eastern Europe,287.0
-211,Feb 2020,Latin America and the Caribbean,34.0
-212,Feb 2020,Melanesia,13.0
-213,Feb 2020,Micronesia,2.0
-214,Feb 2020,Northern Africa,176.0
-215,Feb 2020,Northern America,1064.0
-216,Feb 2020,Northern Europe,454.0
-217,Feb 2020,Polynesia,4.0
-218,Feb 2020,South-eastern Asia,14377.0
-219,Feb 2020,Southern Asia,1918.0
-220,Feb 2020,Southern Europe,117.0
-221,Feb 2020,Sub-Saharan Africa,43.0
-222,Feb 2020,Western Asia,142.0
-223,Feb 2020,Western Europe,470.0
-224,Feb 2021,Australia and New Zealand,20.0
-225,Feb 2021,Central Asia,8.0
-226,Feb 2021,Eastern Asia,95.0
-227,Feb 2021,Eastern Europe,21.0
-228,Feb 2021,Latin America and the Caribbean,5.0
-229,Feb 2021,Melanesia,1.0
-230,Feb 2021,Micronesia,10.0
-231,Feb 2021,Northern Africa,18.0
-232,Feb 2021,Northern America,31.0
-233,Feb 2021,Northern Europe,26.0
-234,Feb 2021,South-eastern Asia,764.0
-235,Feb 2021,Southern Asia,115.0
-236,Feb 2021,Southern Europe,13.0
-237,Feb 2021,Sub-Saharan Africa,10.0
-238,Feb 2021,Western Asia,13.0
-239,Feb 2021,Western Europe,21.0
-240,Feb 2022,Australia and New Zealand,72.0
-241,Feb 2022,Central Asia,22.0
-242,Feb 2022,Eastern Asia,204.0
-243,Feb 2022,Eastern Europe,19.0
-244,Feb 2022,Latin America and the Caribbean,7.0
-245,Feb 2022,Melanesia,3.0
-246,Feb 2022,Northern Africa,117.0
-247,Feb 2022,Northern America,95.0
-248,Feb 2022,Northern Europe,55.0
-249,Feb 2022,South-eastern Asia,819.0
-250,Feb 2022,Southern Asia,674.0
-251,Feb 2022,Southern Europe,21.0
-252,Feb 2022,Sub-Saharan Africa,18.0
-253,Feb 2022,Western Asia,46.0
-254,Feb 2022,Western Europe,47.0
-255,Feb 2023,Australia and New Zealand,1098.0
-256,Feb 2023,Central Asia,85.0
-257,Feb 2023,Eastern Asia,2803.0
-258,Feb 2023,Eastern Europe,291.0
-259,Feb 2023,Latin America and the Caribbean,30.0
-260,Feb 2023,Melanesia,16.0
-261,Feb 2023,Micronesia,2.0
-262,Feb 2023,Northern Africa,123.0
-263,Feb 2023,Northern America,1122.0
-264,Feb 2023,Northern Europe,351.0
-265,Feb 2023,Polynesia,3.0
-266,Feb 2023,South-eastern Asia,15052.0
-267,Feb 2023,Southern Asia,2353.0
-268,Feb 2023,Southern Europe,99.0
-269,Feb 2023,Sub-Saharan Africa,37.0
-270,Feb 2023,Western Asia,105.0
-271,Feb 2023,Western Europe,448.0
-272,Feb 2024,Australia and New Zealand,1306.0
-273,Feb 2024,Central Asia,167.0
-274,Feb 2024,Eastern Asia,7107.0
-275,Feb 2024,Eastern Europe,317.0
-276,Feb 2024,Latin America and the Caribbean,38.0
-277,Feb 2024,Melanesia,19.0
-278,Feb 2024,Micronesia,3.0
-279,Feb 2024,Northern Africa,165.0
-280,Feb 2024,Northern America,1319.0
-281,Feb 2024,Northern Europe,611.0
-282,Feb 2024,Polynesia,5.0
-283,Feb 2024,South-eastern Asia,17953.0
-284,Feb 2024,Southern Asia,2052.0
-285,Feb 2024,Southern Europe,150.0
-286,Feb 2024,Sub-Saharan Africa,48.0
-287,Feb 2024,Western Asia,158.0
-288,Feb 2024,Western Europe,673.0
-289,Jan 2020,Australia and New Zealand,2425.0
-290,Jan 2020,Central Asia,247.0
-291,Jan 2020,Eastern Asia,7816.0
-292,Jan 2020,Eastern Europe,288.0
-293,Jan 2020,Latin America and the Caribbean,47.0
-294,Jan 2020,Melanesia,26.0
-295,Jan 2020,Micronesia,2.0
-296,Jan 2020,Northern Africa,191.0
-297,Jan 2020,Northern America,1681.0
-298,Jan 2020,Northern Europe,496.0
-299,Jan 2020,Polynesia,3.0
-300,Jan 2020,South-eastern Asia,19624.0
-301,Jan 2020,Southern Asia,2376.0
-302,Jan 2020,Southern Europe,121.0
-303,Jan 2020,Sub-Saharan Africa,63.0
-304,Jan 2020,Western Asia,329.0
-305,Jan 2020,Western Europe,461.0
-306,Jan 2021,Australia and New Zealand,22.0
-307,Jan 2021,Central Asia,8.0
-308,Jan 2021,Eastern Asia,102.0
-309,Jan 2021,Eastern Europe,19.0
-310,Jan 2021,Latin America and the Caribbean,7.0
-311,Jan 2021,Melanesia,2.0
-312,Jan 2021,Micronesia,6.0
-313,Jan 2021,Northern Africa,16.0
-314,Jan 2021,Northern America,39.0
-315,Jan 2021,Northern Europe,22.0
-316,Jan 2021,South-eastern Asia,767.0
-317,Jan 2021,Southern Asia,98.0
-318,Jan 2021,Southern Europe,10.0
-319,Jan 2021,Sub-Saharan Africa,6.0
-320,Jan 2021,Western Asia,12.0
-321,Jan 2021,Western Europe,30.0
-322,Jan 2022,Australia and New Zealand,125.0
-323,Jan 2022,Central Asia,31.0
-324,Jan 2022,Eastern Asia,175.0
-325,Jan 2022,Eastern Europe,21.0
-326,Jan 2022,Latin America and the Caribbean,16.0
-327,Jan 2022,Melanesia,2.0
-328,Jan 2022,Northern Africa,90.0
-329,Jan 2022,Northern America,113.0
-330,Jan 2022,Northern Europe,103.0
-331,Jan 2022,South-eastern Asia,906.0
-332,Jan 2022,Southern Asia,711.0
-333,Jan 2022,Southern Europe,39.0
-334,Jan 2022,Sub-Saharan Africa,19.0
-335,Jan 2022,Western Asia,60.0
-336,Jan 2022,Western Europe,79.0
-337,Jan 2023,Australia and New Zealand,2181.0
-338,Jan 2023,Central Asia,114.0
-339,Jan 2023,Eastern Asia,2628.0
-340,Jan 2023,Eastern Europe,294.0
-341,Jan 2023,Latin America and the Caribbean,33.0
-342,Jan 2023,Melanesia,19.0
-343,Jan 2023,Micronesia,2.0
-344,Jan 2023,Northern Africa,127.0
-345,Jan 2023,Northern America,1209.0
-346,Jan 2023,Northern Europe,410.0
-347,Jan 2023,Polynesia,7.0
-348,Jan 2023,South-eastern Asia,16317.0
-349,Jan 2023,Southern Asia,2282.0
-350,Jan 2023,Southern Europe,103.0
-351,Jan 2023,Sub-Saharan Africa,48.0
-352,Jan 2023,Western Asia,110.0
-353,Jan 2023,Western Europe,447.0
-354,Jan 2024,Australia and New Zealand,2353.0
-355,Jan 2024,Central Asia,222.0
-356,Jan 2024,Eastern Asia,6048.0
-357,Jan 2024,Eastern Europe,346.0
-358,Jan 2024,Latin America and the Caribbean,47.0
-359,Jan 2024,Melanesia,42.0
-360,Jan 2024,Micronesia,5.0
-361,Jan 2024,Northern Africa,196.0
-362,Jan 2024,Northern America,1366.0
-363,Jan 2024,Northern Europe,605.0
-364,Jan 2024,Polynesia,9.0
-365,Jan 2024,South-eastern Asia,16757.0
-366,Jan 2024,Southern Asia,2621.0
-367,Jan 2024,Southern Europe,172.0
-368,Jan 2024,Sub-Saharan Africa,59.0
-369,Jan 2024,Western Asia,204.0
-370,Jan 2024,Western Europe,499.0
-371,Jul 2020,Australia and New Zealand,29.0
-372,Jul 2020,Central Asia,7.0
-373,Jul 2020,Eastern Asia,74.0
-374,Jul 2020,Eastern Europe,29.0
-375,Jul 2020,Latin America and the Caribbean,4.0
-376,Jul 2020,Northern Africa,6.0
-377,Jul 2020,Northern America,77.0
-378,Jul 2020,Northern Europe,25.0
-379,Jul 2020,South-eastern Asia,427.0
-380,Jul 2020,Southern Asia,72.0
-381,Jul 2020,Southern Europe,11.0
-382,Jul 2020,Sub-Saharan Africa,4.0
-383,Jul 2020,Western Asia,9.0
-384,Jul 2020,Western Europe,32.0
-385,Jul 2021,Australia and New Zealand,16.0
-386,Jul 2021,Central Asia,5.0
-387,Jul 2021,Eastern Asia,95.0
-388,Jul 2021,Eastern Europe,12.0
-389,Jul 2021,Latin America and the Caribbean,5.0
-390,Jul 2021,Micronesia,4.0
-391,Jul 2021,Northern Africa,19.0
-392,Jul 2021,Northern America,90.0
-393,Jul 2021,Northern Europe,49.0
-394,Jul 2021,South-eastern Asia,762.0
-395,Jul 2021,Southern Asia,14.0
-396,Jul 2021,Southern Europe,9.0
-397,Jul 2021,Sub-Saharan Africa,5.0
-398,Jul 2021,Western Asia,12.0
-399,Jul 2021,Western Europe,20.0
-400,Jul 2022,Australia and New Zealand,1058.0
-401,Jul 2022,Central Asia,73.0
-402,Jul 2022,Eastern Asia,1522.0
-403,Jul 2022,Eastern Europe,74.0
-404,Jul 2022,Latin America and the Caribbean,24.0
-405,Jul 2022,Melanesia,16.0
-406,Jul 2022,Micronesia,1.0
-407,Jul 2022,Northern Africa,118.0
-408,Jul 2022,Northern America,987.0
-409,Jul 2022,Northern Europe,370.0
-410,Jul 2022,Polynesia,2.0
-411,Jul 2022,South-eastern Asia,14368.0
-412,Jul 2022,Southern Asia,1786.0
-413,Jul 2022,Southern Europe,116.0
-414,Jul 2022,Sub-Saharan Africa,27.0
-415,Jul 2022,Western Asia,218.0
-416,Jul 2022,Western Europe,411.0
-417,Jul 2023,Australia and New Zealand,1796.0
-418,Jul 2023,Central Asia,104.0
-419,Jul 2023,Eastern Asia,5388.0
-420,Jul 2023,Eastern Europe,189.0
-421,Jul 2023,Latin America and the Caribbean,36.0
-422,Jul 2023,Melanesia,24.0
-423,Jul 2023,Micronesia,2.0
-424,Jul 2023,Northern Africa,226.0
-425,Jul 2023,Northern America,1416.0
-426,Jul 2023,Northern Europe,523.0
-427,Jul 2023,Polynesia,4.0
-428,Jul 2023,South-eastern Asia,18927.0
-429,Jul 2023,Southern Asia,2531.0
-430,Jul 2023,Southern Europe,192.0
-431,Jul 2023,Sub-Saharan Africa,52.0
-432,Jul 2023,Western Asia,315.0
-433,Jul 2023,Western Europe,652.0
-434,Jun 2020,Australia and New Zealand,9.0
-435,Jun 2020,Central Asia,1.0
-436,Jun 2020,Eastern Asia,50.0
-437,Jun 2020,Eastern Europe,5.0
-438,Jun 2020,Latin America and the Caribbean,1.0
-439,Jun 2020,Northern Africa,3.0
-440,Jun 2020,Northern America,13.0
-441,Jun 2020,Northern Europe,11.0
-442,Jun 2020,South-eastern Asia,433.0
-443,Jun 2020,Southern Asia,26.0
-444,Jun 2020,Southern Europe,2.0
-445,Jun 2020,Sub-Saharan Africa,9.0
-446,Jun 2020,Western Asia,4.0
-447,Jun 2020,Western Europe,8.0
-448,Jun 2021,Australia and New Zealand,15.0
-449,Jun 2021,Central Asia,9.0
-450,Jun 2021,Eastern Asia,107.0
-451,Jun 2021,Eastern Europe,25.0
-452,Jun 2021,Latin America and the Caribbean,4.0
-453,Jun 2021,Melanesia,3.0
-454,Jun 2021,Micronesia,5.0
-455,Jun 2021,Northern Africa,21.0
-456,Jun 2021,Northern America,63.0
-457,Jun 2021,Northern Europe,16.0
-458,Jun 2021,South-eastern Asia,762.0
-459,Jun 2021,Southern Asia,10.0
-460,Jun 2021,Southern Europe,8.0
-461,Jun 2021,Sub-Saharan Africa,9.0
-462,Jun 2021,Western Asia,13.0
-463,Jun 2021,Western Europe,19.0
-464,Jun 2022,Australia and New Zealand,707.0
-465,Jun 2022,Central Asia,55.0
-466,Jun 2022,Eastern Asia,928.0
-467,Jun 2022,Eastern Europe,59.0
-468,Jun 2022,Latin America and the Caribbean,18.0
-469,Jun 2022,Melanesia,13.0
-470,Jun 2022,Micronesia,3.0
-471,Jun 2022,Northern Africa,121.0
-472,Jun 2022,Northern America,804.0
-473,Jun 2022,Northern Europe,242.0
-474,Jun 2022,Polynesia,1.0
-475,Jun 2022,South-eastern Asia,12677.0
-476,Jun 2022,Southern Asia,1612.0
-477,Jun 2022,Southern Europe,62.0
-478,Jun 2022,Sub-Saharan Africa,24.0
-479,Jun 2022,Western Asia,174.0
-480,Jun 2022,Western Europe,225.0
-481,Jun 2023,Australia and New Zealand,1349.0
-482,Jun 2023,Central Asia,73.0
-483,Jun 2023,Eastern Asia,2981.0
-484,Jun 2023,Eastern Europe,116.0
-485,Jun 2023,Latin America and the Caribbean,22.0
-486,Jun 2023,Melanesia,31.0
-487,Jun 2023,Micronesia,2.0
-488,Jun 2023,Northern Africa,119.0
-489,Jun 2023,Northern America,1036.0
-490,Jun 2023,Northern Europe,295.0
-491,Jun 2023,Polynesia,3.0
-492,Jun 2023,South-eastern Asia,18068.0
-493,Jun 2023,Southern Asia,2475.0
-494,Jun 2023,Southern Europe,88.0
-495,Jun 2023,Sub-Saharan Africa,43.0
-496,Jun 2023,Western Asia,194.0
-497,Jun 2023,Western Europe,308.0
-498,Jun 2024,Australia and New Zealand,1825.0
-499,Jun 2024,Central Asia,245.0
-500,Jun 2024,Eastern Asia,6928.0
-501,Jun 2024,Eastern Europe,184.0
-502,Jun 2024,Latin America and the Caribbean,31.0
-503,Jun 2024,Melanesia,29.0
-504,Jun 2024,Micronesia,3.0
-505,Jun 2024,Northern Africa,204.0
-506,Jun 2024,Northern America,1465.0
-507,Jun 2024,Northern Europe,425.0
-508,Jun 2024,Polynesia,4.0
-509,Jun 2024,South-eastern Asia,25603.0
-510,Jun 2024,Southern Asia,2932.0
-511,Jun 2024,Southern Europe,146.0
-512,Jun 2024,Sub-Saharan Africa,58.0
-513,Jun 2024,Western Asia,296.0
-514,Jun 2024,Western Europe,409.0
-515,Mar 2020,Australia and New Zealand,466.0
-516,Mar 2020,Central Asia,85.0
-517,Mar 2020,Eastern Asia,1011.0
-518,Mar 2020,Eastern Europe,141.0
-519,Mar 2020,Latin America and the Caribbean,25.0
-520,Mar 2020,Melanesia,8.0
-521,Mar 2020,Micronesia,2.0
-522,Mar 2020,Northern Africa,79.0
-523,Mar 2020,Northern America,418.0
-524,Mar 2020,Northern Europe,208.0
-525,Mar 2020,Polynesia,2.0
-526,Mar 2020,South-eastern Asia,8739.0
-527,Mar 2020,Southern Asia,916.0
-528,Mar 2020,Southern Europe,52.0
-529,Mar 2020,Sub-Saharan Africa,27.0
-530,Mar 2020,Western Asia,68.0
-531,Mar 2020,Western Europe,266.0
-532,Mar 2021,Australia and New Zealand,21.0
-533,Mar 2021,Central Asia,10.0
-534,Mar 2021,Eastern Asia,147.0
-535,Mar 2021,Eastern Europe,20.0
-536,Mar 2021,Latin America and the Caribbean,5.0
-537,Mar 2021,Melanesia,1.0
-538,Mar 2021,Micronesia,4.0
-539,Mar 2021,Northern Africa,44.0
-540,Mar 2021,Northern America,32.0
-541,Mar 2021,Northern Europe,23.0
-542,Mar 2021,South-eastern Asia,863.0
-543,Mar 2021,Southern Asia,150.0
-544,Mar 2021,Southern Europe,9.0
-545,Mar 2021,Sub-Saharan Africa,14.0
-546,Mar 2021,Western Asia,24.0
-547,Mar 2021,Western Europe,24.0
-548,Mar 2022,Australia and New Zealand,95.0
-549,Mar 2022,Central Asia,17.0
-550,Mar 2022,Eastern Asia,212.0
-551,Mar 2022,Eastern Europe,23.0
-552,Mar 2022,Latin America and the Caribbean,8.0
-553,Mar 2022,Melanesia,2.0
-554,Mar 2022,Northern Africa,75.0
-555,Mar 2022,Northern America,109.0
-556,Mar 2022,Northern Europe,84.0
-557,Mar 2022,Polynesia,1.0
-558,Mar 2022,South-eastern Asia,1262.0
-559,Mar 2022,Southern Asia,828.0
-560,Mar 2022,Southern Europe,22.0
-561,Mar 2022,Sub-Saharan Africa,20.0
-562,Mar 2022,Western Asia,79.0
-563,Mar 2022,Western Europe,69.0
-564,Mar 2023,Australia and New Zealand,1243.0
-565,Mar 2023,Central Asia,109.0
-566,Mar 2023,Eastern Asia,3009.0
-567,Mar 2023,Eastern Europe,293.0
-568,Mar 2023,Latin America and the Caribbean,30.0
-569,Mar 2023,Melanesia,24.0
-570,Mar 2023,Micronesia,2.0
-571,Mar 2023,Northern Africa,101.0
-572,Mar 2023,Northern America,1283.0
-573,Mar 2023,Northern Europe,417.0
-574,Mar 2023,Polynesia,8.0
-575,Mar 2023,South-eastern Asia,17401.0
-576,Mar 2023,Southern Asia,2605.0
-577,Mar 2023,Southern Europe,110.0
-578,Mar 2023,Sub-Saharan Africa,48.0
-579,Mar 2023,Western Asia,107.0
-580,Mar 2023,Western Europe,479.0
-581,Mar 2024,Australia and New Zealand,1535.0
-582,Mar 2024,Central Asia,221.0
-583,Mar 2024,Eastern Asia,5711.0
-584,Mar 2024,Eastern Europe,309.0
-585,Mar 2024,Latin America and the Caribbean,44.0
-586,Mar 2024,Melanesia,25.0
-587,Mar 2024,Micronesia,2.0
-588,Mar 2024,Northern Africa,107.0
-589,Mar 2024,Northern America,1439.0
-590,Mar 2024,Northern Europe,619.0
-591,Mar 2024,Polynesia,4.0
-592,Mar 2024,South-eastern Asia,22765.0
-593,Mar 2024,Southern Asia,2453.0
-594,Mar 2024,Southern Europe,140.0
-595,Mar 2024,Sub-Saharan Africa,51.0
-596,Mar 2024,Western Asia,83.0
-597,Mar 2024,Western Europe,597.0
-598,May 2020,Australia and New Zealand,16.0
-599,May 2020,Eastern Asia,7.0
-600,May 2020,Eastern Europe,5.0
-601,May 2020,Latin America and the Caribbean,12.0
-602,May 2020,Northern Africa,13.0
-603,May 2020,Northern America,11.0
-604,May 2020,Northern Europe,7.0
-605,May 2020,South-eastern Asia,448.0
-606,May 2020,Southern Asia,12.0
-607,May 2020,Southern Europe,4.0
-608,May 2020,Sub-Saharan Africa,1.0
-609,May 2020,Western Asia,3.0
-610,May 2020,Western Europe,5.0
-611,May 2021,Australia and New Zealand,17.0
-612,May 2021,Central Asia,10.0
-613,May 2021,Eastern Asia,139.0
-614,May 2021,Eastern Europe,22.0
-615,May 2021,Latin America and the Caribbean,8.0
-616,May 2021,Melanesia,1.0
-617,May 2021,Micronesia,11.0
-618,May 2021,Northern Africa,25.0
-619,May 2021,Northern America,47.0
-620,May 2021,Northern Europe,23.0
-621,May 2021,South-eastern Asia,675.0
-622,May 2021,Southern Asia,35.0
-623,May 2021,Southern Europe,11.0
-624,May 2021,Sub-Saharan Africa,10.0
-625,May 2021,Western Asia,18.0
-626,May 2021,Western Europe,22.0
-627,May 2022,Australia and New Zealand,662.0
-628,May 2022,Central Asia,50.0
-629,May 2022,Eastern Asia,824.0
-630,May 2022,Eastern Europe,60.0
-631,May 2022,Latin America and the Caribbean,18.0
-632,May 2022,Melanesia,15.0
-633,May 2022,Micronesia,1.0
-634,May 2022,Northern Africa,123.0
-635,May 2022,Northern America,581.0
-636,May 2022,Northern Europe,220.0
-637,May 2022,Polynesia,2.0
-638,May 2022,South-eastern Asia,9898.0
-639,May 2022,Southern Asia,1228.0
-640,May 2022,Southern Europe,55.0
-641,May 2022,Sub-Saharan Africa,28.0
-642,May 2022,Western Asia,148.0
-643,May 2022,Western Europe,220.0
-644,May 2023,Australia and New Zealand,1222.0
-645,May 2023,Central Asia,89.0
-646,May 2023,Eastern Asia,3500.0
-647,May 2023,Eastern Europe,194.0
-648,May 2023,Latin America and the Caribbean,34.0
-649,May 2023,Melanesia,25.0
-650,May 2023,Micronesia,2.0
-651,May 2023,Northern Africa,133.0
-652,May 2023,Northern America,1149.0
-653,May 2023,Northern Europe,321.0
-654,May 2023,Polynesia,2.0
-655,May 2023,South-eastern Asia,17844.0
-656,May 2023,Southern Asia,2711.0
-657,May 2023,Southern Europe,88.0
-658,May 2023,Sub-Saharan Africa,46.0
-659,May 2023,Western Asia,123.0
-660,May 2023,Western Europe,447.0
-661,May 2024,Australia and New Zealand,1279.0
-662,May 2024,Central Asia,191.0
-663,May 2024,Eastern Asia,5634.0
-664,May 2024,Eastern Europe,193.0
-665,May 2024,Latin America and the Caribbean,35.0
-666,May 2024,Melanesia,35.0
-667,May 2024,Micronesia,2.0
-668,May 2024,Northern Africa,187.0
-669,May 2024,Northern America,1315.0
-670,May 2024,Northern Europe,399.0
-671,May 2024,Polynesia,2.0
-672,May 2024,South-eastern Asia,22252.0
-673,May 2024,Southern Asia,3951.0
-674,May 2024,Southern Europe,121.0
-675,May 2024,Sub-Saharan Africa,52.0
-676,May 2024,Western Asia,148.0
-677,May 2024,Western Europe,486.0
-678,Nov 2020,Australia and New Zealand,28.0
-679,Nov 2020,Central Asia,3.0
-680,Nov 2020,Eastern Asia,138.0
-681,Nov 2020,Eastern Europe,16.0
-682,Nov 2020,Latin America and the Caribbean,2.0
-683,Nov 2020,Melanesia,1.0
-684,Nov 2020,Micronesia,10.0
-685,Nov 2020,Northern Africa,8.0
-686,Nov 2020,Northern America,34.0
-687,Nov 2020,Northern Europe,22.0
-688,Nov 2020,South-eastern Asia,537.0
-689,Nov 2020,Southern Asia,67.0
-690,Nov 2020,Southern Europe,6.0
-691,Nov 2020,Sub-Saharan Africa,5.0
-692,Nov 2020,Western Asia,8.0
-693,Nov 2020,Western Europe,17.0
-694,Nov 2021,Australia and New Zealand,40.0
-695,Nov 2021,Central Asia,12.0
-696,Nov 2021,Eastern Asia,129.0
-697,Nov 2021,Eastern Europe,15.0
-698,Nov 2021,Latin America and the Caribbean,5.0
-699,Nov 2021,Melanesia,1.0
-700,Nov 2021,Northern Africa,72.0
-701,Nov 2021,Northern America,47.0
-702,Nov 2021,Northern Europe,40.0
-703,Nov 2021,South-eastern Asia,774.0
-704,Nov 2021,Southern Asia,219.0
-705,Nov 2021,Southern Europe,14.0
-706,Nov 2021,Sub-Saharan Africa,10.0
-707,Nov 2021,Western Asia,35.0
-708,Nov 2021,Western Europe,33.0
-709,Nov 2022,Australia and New Zealand,1367.0
-710,Nov 2022,Central Asia,80.0
-711,Nov 2022,Eastern Asia,1583.0
-712,Nov 2022,Eastern Europe,188.0
-713,Nov 2022,Latin America and the Caribbean,29.0
-714,Nov 2022,Melanesia,16.0
-715,Nov 2022,Micronesia,3.0
-716,Nov 2022,Northern Africa,100.0
-717,Nov 2022,Northern America,1094.0
-718,Nov 2022,Northern Europe,322.0
-719,Nov 2022,Polynesia,5.0
-720,Nov 2022,South-eastern Asia,15963.0
-721,Nov 2022,Southern Asia,2412.0
-722,Nov 2022,Southern Europe,100.0
-723,Nov 2022,Sub-Saharan Africa,53.0
-724,Nov 2022,Western Asia,128.0
-725,Nov 2022,Western Europe,330.0
-726,Nov 2023,Australia and New Zealand,1675.0
-727,Nov 2023,Central Asia,117.0
-728,Nov 2023,Eastern Asia,3881.0
-729,Nov 2023,Eastern Europe,233.0
-730,Nov 2023,Latin America and the Caribbean,42.0
-731,Nov 2023,Melanesia,33.0
-732,Nov 2023,Micronesia,4.0
-733,Nov 2023,Northern Africa,219.0
-734,Nov 2023,Northern America,1299.0
-735,Nov 2023,Northern Europe,370.0
-736,Nov 2023,Polynesia,7.0
-737,Nov 2023,South-eastern Asia,20371.0
-738,Nov 2023,Southern Asia,2049.0
-739,Nov 2023,Southern Europe,145.0
-740,Nov 2023,Sub-Saharan Africa,68.0
-741,Nov 2023,Western Asia,194.0
-742,Nov 2023,Western Europe,412.0
-743,Oct 2020,Australia and New Zealand,22.0
-744,Oct 2020,Central Asia,3.0
-745,Oct 2020,Eastern Asia,140.0
-746,Oct 2020,Eastern Europe,16.0
-747,Oct 2020,Latin America and the Caribbean,3.0
-748,Oct 2020,Micronesia,12.0
-749,Oct 2020,Northern Africa,13.0
-750,Oct 2020,Northern America,22.0
-751,Oct 2020,Northern Europe,22.0
-752,Oct 2020,South-eastern Asia,488.0
-753,Oct 2020,Southern Asia,56.0
-754,Oct 2020,Southern Europe,10.0
-755,Oct 2020,Sub-Saharan Africa,6.0
-756,Oct 2020,Western Asia,17.0
-757,Oct 2020,Western Europe,20.0
-758,Oct 2021,Australia and New Zealand,29.0
-759,Oct 2021,Central Asia,14.0
-760,Oct 2021,Eastern Asia,154.0
-761,Oct 2021,Eastern Europe,13.0
-762,Oct 2021,Latin America and the Caribbean,5.0
-763,Oct 2021,Micronesia,1.0
-764,Oct 2021,Northern Africa,52.0
-765,Oct 2021,Northern America,83.0
-766,Oct 2021,Northern Europe,29.0
-767,Oct 2021,South-eastern Asia,803.0
-768,Oct 2021,Southern Asia,97.0
-769,Oct 2021,Southern Europe,10.0
-770,Oct 2021,Sub-Saharan Africa,11.0
-771,Oct 2021,Western Asia,43.0
-772,Oct 2021,Western Europe,27.0
-773,Oct 2022,Australia and New Zealand,1136.0
-774,Oct 2022,Central Asia,60.0
-775,Oct 2022,Eastern Asia,1683.0
-776,Oct 2022,Eastern Europe,143.0
-777,Oct 2022,Latin America and the Caribbean,26.0
-778,Oct 2022,Melanesia,23.0
-779,Oct 2022,Micronesia,2.0
-780,Oct 2022,Northern Africa,142.0
-781,Oct 2022,Northern America,969.0
-782,Oct 2022,Northern Europe,374.0
-783,Oct 2022,Polynesia,5.0
-784,Oct 2022,South-eastern Asia,15957.0
-785,Oct 2022,Southern Asia,2259.0
-786,Oct 2022,Southern Europe,106.0
-787,Oct 2022,Sub-Saharan Africa,33.0
-788,Oct 2022,Western Asia,103.0
-789,Oct 2022,Western Europe,366.0
-790,Oct 2023,Australia and New Zealand,1516.0
-791,Oct 2023,Central Asia,111.0
-792,Oct 2023,Eastern Asia,3980.0
-793,Oct 2023,Eastern Europe,193.0
-794,Oct 2023,Latin America and the Caribbean,46.0
-795,Oct 2023,Melanesia,34.0
-796,Oct 2023,Micronesia,2.0
-797,Oct 2023,Northern Africa,239.0
-798,Oct 2023,Northern America,1309.0
-799,Oct 2023,Northern Europe,414.0
-800,Oct 2023,Polynesia,8.0
-801,Oct 2023,South-eastern Asia,19804.0
-802,Oct 2023,Southern Asia,2419.0
-803,Oct 2023,Southern Europe,126.0
-804,Oct 2023,Sub-Saharan Africa,52.0
-805,Oct 2023,Western Asia,157.0
-806,Oct 2023,Western Europe,434.0
-807,Sep 2020,Australia and New Zealand,40.0
-808,Sep 2020,Central Asia,6.0
-809,Sep 2020,Eastern Asia,112.0
-810,Sep 2020,Eastern Europe,21.0
-811,Sep 2020,Latin America and the Caribbean,2.0
-812,Sep 2020,Melanesia,1.0
-813,Sep 2020,Northern Africa,13.0
-814,Sep 2020,Northern America,63.0
-815,Sep 2020,Northern Europe,21.0
-816,Sep 2020,South-eastern Asia,465.0
-817,Sep 2020,Southern Asia,62.0
-818,Sep 2020,Southern Europe,5.0
-819,Sep 2020,Sub-Saharan Africa,7.0
-820,Sep 2020,Western Asia,12.0
-821,Sep 2020,Western Europe,18.0
-822,Sep 2021,Australia and New Zealand,23.0
-823,Sep 2021,Central Asia,12.0
-824,Sep 2021,Eastern Asia,147.0
-825,Sep 2021,Eastern Europe,18.0
-826,Sep 2021,Latin America and the Caribbean,4.0
-827,Sep 2021,Melanesia,1.0
-828,Sep 2021,Northern Africa,29.0
-829,Sep 2021,Northern America,59.0
-830,Sep 2021,Northern Europe,33.0
-831,Sep 2021,South-eastern Asia,888.0
-832,Sep 2021,Southern Asia,27.0
-833,Sep 2021,Southern Europe,16.0
-834,Sep 2021,Sub-Saharan Africa,13.0
-835,Sep 2021,Western Asia,33.0
-836,Sep 2021,Western Europe,33.0
-837,Sep 2022,Australia and New Zealand,1015.0
-838,Sep 2022,Central Asia,75.0
-839,Sep 2022,Eastern Asia,1576.0
-840,Sep 2022,Eastern Europe,95.0
-841,Sep 2022,Latin America and the Caribbean,23.0
-842,Sep 2022,Melanesia,17.0
-843,Sep 2022,Micronesia,2.0
-844,Sep 2022,Northern Africa,173.0
-845,Sep 2022,Northern America,855.0
-846,Sep 2022,Northern Europe,290.0
-847,Sep 2022,Polynesia,7.0
-848,Sep 2022,South-eastern Asia,15106.0
-849,Sep 2022,Southern Asia,2110.0
-850,Sep 2022,Southern Europe,92.0
-851,Sep 2022,Sub-Saharan Africa,34.0
-852,Sep 2022,Western Asia,118.0
-853,Sep 2022,Western Europe,343.0
-854,Sep 2023,Australia and New Zealand,1697.0
-855,Sep 2023,Central Asia,109.0
-856,Sep 2023,Eastern Asia,4394.0
-857,Sep 2023,Eastern Europe,174.0
-858,Sep 2023,Latin America and the Caribbean,42.0
-859,Sep 2023,Melanesia,35.0
-860,Sep 2023,Micronesia,3.0
-861,Sep 2023,Northern Africa,262.0
-862,Sep 2023,Northern America,1041.0
-863,Sep 2023,Northern Europe,374.0
-864,Sep 2023,Polynesia,6.0
-865,Sep 2023,South-eastern Asia,20054.0
-866,Sep 2023,Southern Asia,2825.0
-867,Sep 2023,Southern Europe,159.0
-868,Sep 2023,Sub-Saharan Africa,59.0
-869,Sep 2023,Western Asia,163.0
-870,Sep 2023,Western Europe,468.0
+,date,region,arrivals
+0,Apr 2020,Africa,2.0
+1,Apr 2020,Americas,6.0
+2,Apr 2020,Asia,318.0
+3,Apr 2020,Europe,4.0
+4,Apr 2020,Oceania,6.0
+5,Apr 2021,Africa,17.0
+6,Apr 2021,Americas,15.0
+7,Apr 2021,Asia,376.0
+8,Apr 2021,Europe,18.0
+9,Apr 2021,Oceania,18.0
+10,Apr 2022,Africa,38.0
+11,Apr 2022,Americas,98.0
+12,Apr 2022,Asia,2930.0
+13,Apr 2022,Europe,124.0
+14,Apr 2022,Oceania,275.0
+15,Apr 2023,Africa,60.0
+16,Apr 2023,Americas,191.0
+17,Apr 2023,Asia,5940.0
+18,Apr 2023,Europe,296.0
+19,Apr 2023,Oceania,746.0
+20,Apr 2024,Africa,81.0
+21,Apr 2024,Americas,234.0
+22,Apr 2024,Asia,7467.0
+23,Apr 2024,Europe,340.0
+24,Apr 2024,Oceania,725.0
+25,Aug 2020,Africa,5.0
+26,Aug 2020,Americas,29.0
+27,Aug 2020,Asia,227.0
+28,Aug 2020,Europe,21.0
+29,Aug 2020,Oceania,40.0
+30,Aug 2021,Africa,13.0
+31,Aug 2021,Americas,25.0
+32,Aug 2021,Asia,344.0
+33,Aug 2021,Europe,43.0
+34,Aug 2021,Oceania,56.0
+35,Aug 2022,Africa,65.0
+36,Aug 2022,Americas,152.0
+37,Aug 2022,Asia,5272.0
+38,Aug 2022,Europe,295.0
+39,Aug 2022,Oceania,439.0
+40,Aug 2023,Africa,125.0
+41,Aug 2023,Americas,229.0
+42,Aug 2023,Asia,7012.0
+43,Aug 2023,Europe,426.0
+44,Aug 2023,Oceania,669.0
+45,Dec 2020,Africa,6.0
+46,Dec 2020,Americas,12.0
+47,Dec 2020,Asia,316.0
+48,Dec 2020,Europe,12.0
+49,Dec 2020,Oceania,14.0
+50,Dec 2021,Africa,31.0
+51,Dec 2021,Americas,35.0
+52,Dec 2021,Asia,643.0
+53,Dec 2021,Europe,44.0
+54,Dec 2021,Oceania,49.0
+55,Dec 2022,Africa,70.0
+56,Dec 2022,Americas,195.0
+57,Dec 2022,Asia,6446.0
+58,Dec 2022,Europe,265.0
+59,Dec 2022,Oceania,1022.0
+60,Dec 2023,Africa,115.0
+61,Dec 2023,Americas,300.0
+62,Dec 2023,Asia,8083.0
+63,Dec 2023,Europe,369.0
+64,Dec 2023,Oceania,1220.0
+65,Feb 2020,Africa,78.0
+66,Feb 2020,Americas,186.0
+67,Feb 2020,Asia,5091.0
+68,Feb 2020,Europe,337.0
+69,Feb 2020,Oceania,512.0
+70,Feb 2021,Africa,12.0
+71,Feb 2021,Americas,11.0
+72,Feb 2021,Asia,352.0
+73,Feb 2021,Europe,20.0
+74,Feb 2021,Oceania,16.0
+75,Feb 2022,Africa,31.0
+76,Feb 2022,Americas,33.0
+77,Feb 2022,Asia,477.0
+78,Feb 2022,Europe,37.0
+79,Feb 2022,Oceania,55.0
+80,Feb 2023,Africa,58.0
+81,Feb 2023,Americas,216.0
+82,Feb 2023,Asia,5583.0
+83,Feb 2023,Europe,298.0
+84,Feb 2023,Oceania,578.0
+85,Feb 2024,Africa,79.0
+86,Feb 2024,Americas,250.0
+87,Feb 2024,Asia,6832.0
+88,Feb 2024,Europe,438.0
+89,Feb 2024,Oceania,604.0
+90,Jan 2020,Africa,93.0
+91,Jan 2020,Americas,284.0
+92,Jan 2020,Asia,7318.0
+93,Jan 2020,Europe,337.0
+94,Jan 2020,Oceania,1030.0
+95,Jan 2021,Africa,8.0
+96,Jan 2021,Americas,17.0
+97,Jan 2021,Asia,386.0
+98,Jan 2021,Europe,19.0
+99,Jan 2021,Oceania,19.0
+100,Jan 2022,Africa,31.0
+101,Jan 2022,Americas,48.0
+102,Jan 2022,Asia,527.0
+103,Jan 2022,Europe,61.0
+104,Jan 2022,Oceania,103.0
+105,Jan 2023,Africa,69.0
+106,Jan 2023,Americas,225.0
+107,Jan 2023,Asia,5815.0
+108,Jan 2023,Europe,312.0
+109,Jan 2023,Oceania,1074.0
+110,Jan 2024,Africa,92.0
+111,Jan 2024,Americas,267.0
+112,Jan 2024,Asia,6498.0
+113,Jan 2024,Europe,408.0
+114,Jan 2024,Oceania,1190.0
+115,Jul 2020,Africa,5.0
+116,Jul 2020,Americas,20.0
+117,Jul 2020,Asia,209.0
+118,Jul 2020,Europe,24.0
+119,Jul 2020,Oceania,29.0
+120,Jul 2021,Africa,7.0
+121,Jul 2021,Americas,31.0
+122,Jul 2021,Asia,362.0
+123,Jul 2021,Europe,21.0
+124,Jul 2021,Oceania,14.0
+125,Jul 2022,Africa,48.0
+126,Jul 2022,Americas,193.0
+127,Jul 2022,Asia,5158.0
+128,Jul 2022,Europe,242.0
+129,Jul 2022,Oceania,509.0
+130,Jul 2023,Africa,91.0
+131,Jul 2023,Americas,256.0
+132,Jul 2023,Asia,7005.0
+133,Jul 2023,Europe,391.0
+134,Jul 2023,Oceania,856.0
+135,Jun 2020,Africa,5.0
+136,Jun 2020,Americas,7.0
+137,Jun 2020,Asia,250.0
+138,Jun 2020,Europe,7.0
+139,Jun 2020,Oceania,9.0
+140,Jun 2021,Africa,11.0
+141,Jun 2021,Americas,18.0
+142,Jun 2021,Asia,368.0
+143,Jun 2021,Europe,16.0
+144,Jun 2021,Oceania,12.0
+145,Jun 2022,Africa,44.0
+146,Jun 2022,Americas,162.0
+147,Jun 2022,Asia,4830.0
+148,Jun 2022,Europe,150.0
+149,Jun 2022,Oceania,406.0
+150,Jun 2023,Africa,64.0
+151,Jun 2023,Americas,181.0
+152,Jun 2023,Asia,6559.0
+153,Jun 2023,Europe,205.0
+154,Jun 2023,Oceania,701.0
+155,Jun 2024,Africa,92.0
+156,Jun 2024,Americas,235.0
+157,Jun 2024,Asia,9314.0
+158,Jun 2024,Europe,296.0
+159,Jun 2024,Oceania,822.0
+160,Mar 2020,Africa,41.0
+161,Mar 2020,Americas,101.0
+162,Mar 2020,Asia,3330.0
+163,Mar 2020,Europe,170.0
+164,Mar 2020,Oceania,271.0
+165,Mar 2021,Africa,18.0
+166,Mar 2021,Americas,16.0
+167,Mar 2021,Asia,411.0
+168,Mar 2021,Europe,19.0
+169,Mar 2021,Oceania,14.0
+170,Mar 2022,Africa,31.0
+171,Mar 2022,Americas,38.0
+172,Mar 2022,Asia,683.0
+173,Mar 2022,Europe,49.0
+174,Mar 2022,Oceania,60.0
+175,Mar 2023,Africa,61.0
+176,Mar 2023,Americas,218.0
+177,Mar 2023,Asia,6423.0
+178,Mar 2023,Europe,324.0
+179,Mar 2023,Oceania,617.0
+180,Mar 2024,Africa,65.0
+181,Mar 2024,Americas,278.0
+182,Mar 2024,Asia,8284.0
+183,Mar 2024,Europe,410.0
+184,Mar 2024,Oceania,792.0
+185,May 2020,Africa,5.0
+186,May 2020,Americas,11.0
+187,May 2020,Asia,286.0
+188,May 2020,Europe,6.0
+189,May 2020,Oceania,16.0
+190,May 2021,Africa,13.0
+191,May 2021,Americas,18.0
+192,May 2021,Asia,353.0
+193,May 2021,Europe,19.0
+194,May 2021,Oceania,14.0
+195,May 2022,Africa,51.0
+196,May 2022,Americas,116.0
+197,May 2022,Asia,3735.0
+198,May 2022,Europe,145.0
+199,May 2022,Oceania,370.0
+200,May 2023,Africa,68.0
+201,May 2023,Americas,215.0
+202,May 2023,Asia,6481.0
+203,May 2023,Europe,260.0
+204,May 2023,Oceania,595.0
+205,May 2024,Africa,84.0
+206,May 2024,Americas,226.0
+207,May 2024,Asia,8419.0
+208,May 2024,Europe,303.0
+209,May 2024,Oceania,550.0
+210,Nov 2020,Africa,6.0
+211,Nov 2020,Americas,12.0
+212,Nov 2020,Asia,278.0
+213,Nov 2020,Europe,16.0
+214,Nov 2020,Oceania,23.0
+215,Nov 2021,Africa,19.0
+216,Nov 2021,Americas,20.0
+217,Nov 2021,Asia,363.0
+218,Nov 2021,Europe,26.0
+219,Nov 2021,Oceania,27.0
+220,Nov 2022,Africa,66.0
+221,Nov 2022,Americas,215.0
+222,Nov 2022,Asia,5756.0
+223,Nov 2022,Europe,238.0
+224,Nov 2022,Oceania,630.0
+225,Nov 2023,Africa,100.0
+226,Nov 2023,Americas,249.0
+227,Nov 2023,Asia,7146.0
+228,Nov 2023,Europe,296.0
+229,Nov 2023,Oceania,743.0
+230,Oct 2020,Africa,8.0
+231,Oct 2020,Americas,9.0
+232,Oct 2020,Asia,253.0
+233,Oct 2020,Europe,17.0
+234,Oct 2020,Oceania,20.0
+235,Oct 2021,Africa,18.0
+236,Oct 2021,Americas,18.0
+237,Oct 2021,Asia,374.0
+238,Oct 2021,Europe,21.0
+239,Oct 2021,Oceania,24.0
+240,Oct 2022,Africa,58.0
+241,Oct 2022,Americas,163.0
+242,Oct 2022,Asia,5557.0
+243,Oct 2022,Europe,247.0
+244,Oct 2022,Oceania,575.0
+245,Oct 2023,Africa,92.0
+246,Oct 2023,Americas,247.0
+247,Oct 2023,Asia,7179.0
+248,Oct 2023,Europe,294.0
+249,Oct 2023,Oceania,785.0
+250,Sep 2020,Africa,8.0
+251,Sep 2020,Americas,21.0
+252,Sep 2020,Asia,232.0
+253,Sep 2020,Europe,17.0
+254,Sep 2020,Oceania,32.0
+255,Sep 2021,Africa,16.0
+256,Sep 2021,Americas,19.0
+257,Sep 2021,Asia,405.0
+258,Sep 2021,Europe,26.0
+259,Sep 2021,Oceania,19.0
+260,Sep 2022,Africa,67.0
+261,Sep 2022,Americas,154.0
+262,Sep 2022,Asia,5579.0
+263,Sep 2022,Europe,205.0
+264,Sep 2022,Oceania,560.0
+265,Sep 2023,Africa,107.0
+266,Sep 2023,Americas,221.0
+267,Sep 2023,Asia,7284.0
+268,Sep 2023,Europe,293.0
+269,Sep 2023,Oceania,829.0
+270,pivot,Asia,
