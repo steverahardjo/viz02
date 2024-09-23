@@ -18,9 +18,26 @@
       },
       "mark": {
         "type": "geoshape",
-        "fill": "lightgray",
+        "fill": "dimgray",
         "stroke": "white"
-      }
+      },
+      "transform":[
+        {
+          "lookup": "highlight",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/grouped_arrivals.csv",
+              "format": {
+                "type": "csv"
+              }
+            },
+            "key": "country",
+            "fields": ["longitude", "latitude"]
+          },
+          "as": ["origin_longitude", "origin_latitude"]
+
+          }
+      ]
     },
     {
       "data": {
@@ -44,36 +61,42 @@
           },
           "as": ["origin_longitude", "origin_latitude"]
         },
-        {
-          "calculate": "101.9758", 
-          "as": "dest_longitude"
-        },
-        {
-          "calculate": "4.2105", 
-          "as": "dest_latitude"
-        }
+        {"calculate": "101.9758", "as": "dest_longitude"},
+        {"calculate": "4.2105", "as": "dest_latitude"},
+        {"filter": {
+          "param":"dateSelection"
+        }}
       ],
       "params": [
         {
           "name": "dateSelection",
-          "value":"2020-01-01",
-          "select": {
-            "type": "point",
-            "fields": ["date"]
-          },
+          "select": {"type": "point", "fields": ["date"]},
           "bind": {
-            "input": "range",
-            "min": 0,
-            "max": 26,
-            "step": 1,
-            "name": "Select Date & Month"
+            "input": "select",
+            "options": [
+              "Jan 2020", "Feb 2020", "Mar 2020", "Apr 2020",
+              "May 2020", "Jun 2020", "Jul 2020", "Aug 2020",
+              "Sep 2020", "Oct 2020", "Nov 2020", "Dec 2020",
+              "Jan 2021", "Feb 2021", "Mar 2021", "Apr 2021",
+              "May 2021", "Jun 2021", "Jul 2021", "Aug 2021",
+              "Sep 2021", "Oct 2021", "Nov 2021", "Dec 2021",
+              "Jan 2022", "Feb 2022", "Mar 2022", "Apr 2022",
+              "May 2022", "Jun 2022", "Jul 2022", "Aug 2022",
+              "Sep 2022", "Oct 2022", "Nov 2022", "Dec 2022",
+              "Jan 2023", "Feb 2023", "Mar 2023", "Apr 2023",
+              "May 2023", "Jun 2023", "Jul 2023", "Aug 2023",
+              "Sep 2023", "Oct 2023", "Nov 2023", "Dec 2023",
+              "Jan 2024", "Feb 2024", "March 2024", "Apr 2024",
+              "May 2024"
+            ],
+            "name": "Select Date"
           }
         }
       ],
       "projection": {
         "type": "mercator"
       },
-      "mark": "rule",
+      "mark": {"type": "rule", "color": "palevioletred"},
       "encoding": {
         "longitude": {
           "field": "origin_longitude",
@@ -89,18 +112,19 @@
         "latitude2": {
           "field": "dest_latitude"
         },
-        "color": {
-          "value": "red"
-        },
         "size": {
           "field": "arrivals",
           "type": "quantitative",
           "title": "Number of Arrivals",
           "scale": {
             "domain": [9, 1500000],
-            "range": [1, 7]
+            "range": [1, 10]
           }
-        }
+        },
+        "tooltip": [
+          {"field": "country", "type": "nominal", "title": "Country"},
+          {"field": "arrivals", "type": "quantitative", "title": "Arrivals"}
+        ]
       }
     }
   ]

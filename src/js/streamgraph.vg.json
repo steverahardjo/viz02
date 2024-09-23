@@ -1,13 +1,13 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 650,
-    "height": 1000,
+    "height": 500,
     "data": {
         "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/streamgraph.csv"
     },
     "mark": {
         "type": "area",
-        "interpolate": "catmull-rom"
+        "interpolate": "monotone"
     },
     "encoding": {
         "x": {
@@ -16,19 +16,20 @@
             "axis": {
                 "domain": false,
                 "format": "%Y-%m",
-                "tickSize": 0
+                "tickSize": 0,
+                "tickCount": "month"
             }
         },
         "y": {
             "field": "arrivals",
             "axis": null,
-            "stack":"normalize",
-            "scale":{
-                "range":[0, 2000]
-            }
+            "stack": "zero"
         },
         "color": {
-            "field": "sub-region"
+            "field": "region",
+            "scale": {
+                "scheme": "category10"}
         }
     }
 }
+
