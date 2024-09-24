@@ -18,12 +18,11 @@
       },
       "mark": {
         "type": "geoshape",
-        "fill": "dimgray",
         "stroke": "white"
       },
-      "transform":[
+      "transform": [
         {
-          "lookup": "highlight",
+          "lookup": "id", 
           "from": {
             "data": {
               "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/grouped_arrivals.csv",
@@ -32,12 +31,22 @@
               }
             },
             "key": "country",
-            "fields": ["longitude", "latitude"]
+            "fields": ["country"]
           },
-          "as": ["origin_longitude", "origin_latitude"]
-
-          }
-      ]
+          "as": "highlight"
+        },
+        {
+          "calculate": "datum.highlight == null ? 'dimgray' : 'palevioletred'", 
+          "as": "countryColor"
+        }
+      ],
+      "encoding": {
+        "color": {
+          "field": "countryColor", 
+          "type": "nominal",
+          "scale": null
+        }
+      }
     },
     {
       "data": {
