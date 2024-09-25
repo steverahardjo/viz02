@@ -2,6 +2,50 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A scatterplot showing body mass and flipper lengths of penguins.",
   "data": {
-    "url": "data/penguins.json"
+    "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/bubbleChart_pictograph.csv"
+  },
+  "width": 500,
+  "height": 300,
+  "mark": {
+    "type": "circle"
+  },
+  "encoding": {
+    "x": {
+      "field": "adjust_price",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "GDP_dollar",
+      "type": "quantitative",
+      "title": "GDP in dollar",
+      "scale": {
+        "type": "linear"
+      }
+    },
+    "size": {
+      "field": "arrivals",
+      "type": "quantitative",
+      "scale": {
+        "range": [100, 400]
+      }
+    },
+    "color": {
+      "value": "red"
+    },
+    "tooltip": [
+      { "field": "name", "type": "nominal", "title": "Country" },
+      { "field": "arrivals", "type": "quantitative", "title": "Number of Arrivals" }
+    ]
+  },
+  "config": {
+    "background": "#00203FFF",
+    "axis": {
+      "labelColor": "#ADEFD1FF",
+      "titleColor": "#ADEFD1FF"
+    },
+    "legend": {
+      "labelColor": "#ADEFD1FF",
+      "titleColor": "#ADEFD1FF"
+    }
   }
 }

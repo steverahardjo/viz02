@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Flow Map of Foreigners to Malaysia",
   "width": 800,
-  "height": 700,
+  "height": 400,
   "background": "#e0f7fa",
   "layer": [
     {
@@ -14,38 +14,11 @@
         }
       },
       "projection": {
-        "type": "mercator"
+        "type": "orthographic"
       },
       "mark": {
         "type": "geoshape",
         "stroke": "white"
-      },
-      "transform": [
-        {
-          "lookup": "id", 
-          "from": {
-            "data": {
-              "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/grouped_arrivals.csv",
-              "format": {
-                "type": "csv"
-              }
-            },
-            "key": "country",
-            "fields": ["country"]
-          },
-          "as": "highlight"
-        },
-        {
-          "calculate": "datum.highlight == null ? 'dimgray' : 'palevioletred'", 
-          "as": "countryColor"
-        }
-      ],
-      "encoding": {
-        "color": {
-          "field": "countryColor", 
-          "type": "nominal",
-          "scale": null
-        }
       }
     },
     {
@@ -103,7 +76,7 @@
         }
       ],
       "projection": {
-        "type": "mercator"
+        "type": "orthographic"
       },
       "mark": {"type": "rule", "color": "palevioletred"},
       "encoding": {
@@ -120,15 +93,6 @@
         },
         "latitude2": {
           "field": "dest_latitude"
-        },
-        "size": {
-          "field": "arrivals",
-          "type": "quantitative",
-          "title": "Number of Arrivals",
-          "scale": {
-            "domain": [9, 1500000],
-            "range": [1, 10]
-          }
         },
         "tooltip": [
           {"field": "country", "type": "nominal", "title": "Country"},
