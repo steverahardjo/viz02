@@ -30,7 +30,12 @@
       }
     },
     "color": {
-      "value": "red"
+      "field": "arrivals",
+      "type": "quantitative",
+      "scale": {
+        "range": ["#ffcccc", "#ff0000"]
+      },
+      "title": "Number of Arrivals"
     },
     "tooltip": [
       { "field": "name", "type": "nominal", "title": "Country" },
@@ -49,3 +54,5 @@
     }
   }
 }
+
+

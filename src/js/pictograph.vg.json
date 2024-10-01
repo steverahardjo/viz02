@@ -1,24 +1,2 @@
-{
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "config": {"view": {"stroke": ""}},
-    "width": 800,
-    "height": 200,
-    "data": {
-        "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/bubbleChart_pictograph.csv"
-    },
-    "transform": [
-        {
-            "calculate": "{'burger': '🍔'}[datum.adjust_price]",
-            "as": "emoji"
-        },
-        {"window": [{"op": "rank", "as": "rank"}]}
-    ],
-    "mark": {"type": "text", "baseline": "middle"},
-    "encoding": {
-        "x": {"field": "rank", "type": "ordinal", "axis": null},
-        "y": {"field": "animal", "type": "nominal", "axis": null, "sort": null},
-        "row": {"field": "country", "header": {"title": ""}},
-        "text": {"field": "emoji", "type": "nominal"},
-        "size": {"value": 65}
-    }
-}
+
+  

@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Average of Overall Arrivals by Sub-Region to Malaysia",
+  "width": 800,
+  "height": 400,
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/streamgraph.csv",
+        "format": {
+          "type": "csv"
+        }
+      },
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone",
+        "line": true,
+        "stroke": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "axis": {
+            "grid": false,
+            "tickCount": 40
+          }
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "arrivals",
+          "type": "quantitative",
+          "axis": {
+            "title": "Arrivals"
+          },
+          "stack": "center"
+        },
+        "color": {
+          "field": "sub-region",
+          "type": "nominal",
+          "legend": {
+            "title": "Sub-Region"
+          }
+        },
+        "tooltip": [
+          {"field": "date", "type": "temporal", "title": "Date"},
+          {"field": "arrivals", "type": "quantitative", "title": "Arrivals"},
+          {"field": "sub-region", "type": "nominal", "title": "Sub-Region"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"Date": "2020-01-01", "Event": "Chinese New Year"},
+          {"Date": "2020-03-11", "Event": "WHO declares COVID-19 a global pandemic."},
+          {"Date": "2021-11-08", "Event": "US reopens borders for international travelers after COVID-19 restrictions."},
+          {"Date": "2022-02-24", "Event": "Beginning of the Russo-Ukrainian War."}
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "red",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal"
+        }
+      }
+    }
+  ]
+}
+
+
+
+
+
