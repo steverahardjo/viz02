@@ -11,7 +11,7 @@
   },
   "encoding": {
     "x": {
-      "field": "adjust_price",
+      "field": "Distance_km",
       "type": "quantitative"
     },
     "y": {
@@ -39,7 +39,9 @@
     },
     "tooltip": [
       { "field": "name", "type": "nominal", "title": "Country" },
-      { "field": "arrivals", "type": "quantitative", "title": "Number of Arrivals" }
+      { "field": "arrivals", "type": "quantitative", "title": "Number of Arrivals" },
+      { "field": "Distance_km", "type": "quantitative", "title": "Distance to Malaysia" },
+      { "field": "GDP_dollar", "type": "quantitative", "title": "GDP per capita" }
     ]
   },
   "config": {

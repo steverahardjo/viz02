@@ -147,7 +147,7 @@
       "mark": {
         "type": "circle",
         "color": "orange",
-        "opacity": 0.05
+        "opacity": 0.5
       },
       "encoding": {
         "longitude": {
@@ -161,7 +161,7 @@
         "size": {
           "field": "arrivals",
           "type": "quantitative",
-          "scale": {"type": "sqrt", "range": [10, 1000]}
+          "scale": {"type": "sqrt", "range": [100, 1000]}
         },
         "tooltip": [
           {
