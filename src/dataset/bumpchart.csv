@@ -1,13 +1,100 @@
-﻿,,Year,,,,,,,
-Destination Country,Origin Country,2016,2017,2018,2019,2020,2021,2022,2023
-Brunei Darussalam,Total Country (World),218 809,258 955,278 136,333 244,62 325,3 543,35 701,133 630
-Cambodia,Total Country (World),5 011 712,5 602 157,6 201 077,6 610 592,1 306 143,196 495,2 276 626,5 453 231
-Indonesia,Total Country (World),11 519 275,14 039 799,15 810 305,16 106 954,4 052 923,1 557 530,5 889 031,11 677 825
-Lao PDR,Total Country (World),4 239 047,3 868 838,4 186 432,4 791 065,886 447,,1 291 627,3 417 629
-Malaysia,Total Country (World),26 757 392,25 948 459,25 832 354,26 100 784,4 332 722,134 728,10 070 964,20 141 846
-Myanmar,Total Country (World),2 907 207,3 443 133,3 549 428,4 364 101,903 343,130 947,233 487,1 284 731
-Philippines,Total Country (World),5 967 005,6 620 908,7 127 678,8 260 913,1 482 535,163 879,2 653 858,5 450 557
-Singapore,Total Country (World),16 403 595,17 424 611,18 508 302,19 113 842,2 742 443,330 059,6 305 744,13 610 404
-Thailand,Total Country (World),32 529 588,35 591 978,38 178 194,39 916 251,6 702 396,427 869,11 153 026,28 150 016
-Viet Nam,Total Country (World),10 012 735,12 922 151,15 497 791,18 008 591,3 686 779,3 500,3 661 222,12 602 434
-ASEAN,Total Country (World),115 566 365,125 720 989,135 169 697,143 606 337,26 158 056,2 948 550,43 571 286,101 922 303
+,Country,Year,Ranking
+21,ASEAN,2016,9.0
+32,ASEAN,2017,10.0
+43,ASEAN,2018,11.0
+54,ASEAN,2019,11.0
+65,ASEAN,2020,8.0
+76,ASEAN,2021,5.0
+87,ASEAN,2022,3.0
+98,ASEAN,2023,10.0
+10,ASEAN,Origin Country,1.0
+11,Brunei Darussalam,2016,6.0
+22,Brunei Darussalam,2017,6.0
+33,Brunei Darussalam,2018,6.0
+44,Brunei Darussalam,2019,6.0
+55,Brunei Darussalam,2020,3.0
+66,Brunei Darussalam,2021,3.0
+77,Brunei Darussalam,2022,4.0
+88,Brunei Darussalam,2023,6.0
+0,Brunei Darussalam,Origin Country,1.0
+12,Cambodia,2016,2.0
+23,Cambodia,2017,2.0
+34,Cambodia,2018,2.0
+45,Cambodia,2019,2.0
+56,Cambodia,2020,11.0
+67,Cambodia,2021,6.0
+78,Cambodia,2022,8.0
+89,Cambodia,2023,1.0
+1,Cambodia,Origin Country,1.0
+13,Indonesia,2016,10.0
+24,Indonesia,2017,9.0
+35,Indonesia,2018,9.0
+46,Indonesia,2019,10.0
+57,Indonesia,2020,6.0
+68,Indonesia,2021,10.0
+79,Indonesia,2022,2.0
+90,Indonesia,2023,9.0
+2,Indonesia,Origin Country,1.0
+14,Lao PDR,2016,3.0
+25,Lao PDR,2017,4.0
+36,Lao PDR,2018,3.0
+47,Lao PDR,2019,3.0
+58,Lao PDR,2020,2.0
+69,Lao PDR,2021,
+80,Lao PDR,2022,11.0
+91,Lao PDR,2023,3.0
+3,Lao PDR,Origin Country,1.0
+15,Malaysia,2016,5.0
+26,Malaysia,2017,7.0
+37,Malaysia,2018,7.0
+48,Malaysia,2019,7.0
+59,Malaysia,2020,5.0
+70,Malaysia,2021,8.0
+81,Malaysia,2022,10.0
+92,Malaysia,2023,5.0
+4,Malaysia,Origin Country,1.0
+16,Myanmar,2016,7.0
+27,Myanmar,2017,5.0
+38,Myanmar,2018,5.0
+49,Myanmar,2019,4.0
+60,Myanmar,2020,1.0
+71,Myanmar,2021,9.0
+82,Myanmar,2022,6.0
+93,Myanmar,2023,11.0
+5,Myanmar,Origin Country,1.0
+17,Philippines,2016,1.0
+28,Philippines,2017,1.0
+39,Philippines,2018,1.0
+50,Philippines,2019,1.0
+61,Philippines,2020,10.0
+72,Philippines,2021,7.0
+83,Philippines,2022,7.0
+94,Philippines,2023,2.0
+6,Philippines,Origin Country,1.0
+18,Singapore,2016,8.0
+29,Singapore,2017,8.0
+40,Singapore,2018,8.0
+51,Singapore,2019,8.0
+62,Singapore,2020,9.0
+73,Singapore,2021,2.0
+84,Singapore,2022,1.0
+95,Singapore,2023,7.0
+7,Singapore,Origin Country,1.0
+19,Thailand,2016,4.0
+30,Thailand,2017,3.0
+41,Thailand,2018,4.0
+52,Thailand,2019,5.0
+63,Thailand,2020,4.0
+74,Thailand,2021,1.0
+85,Thailand,2022,9.0
+96,Thailand,2023,4.0
+8,Thailand,Origin Country,1.0
+20,Viet Nam,2016,11.0
+31,Viet Nam,2017,11.0
+42,Viet Nam,2018,10.0
+53,Viet Nam,2019,9.0
+64,Viet Nam,2020,7.0
+75,Viet Nam,2021,4.0
+86,Viet Nam,2022,5.0
+97,Viet Nam,2023,8.0
+9,Viet Nam,Origin Country,1.0
