@@ -3,58 +3,79 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Steve's Arrival Viz</title>
-
-  <!-- Import Vega & Vega-Lite -->
+  
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
-
+  
   <!-- Import pure.css -->
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-
-  <!-- Google font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
+  
   <style>
-    /* Container for stacking visualizations vertically */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+    }
+
     .container {
       display: flex;
-      flex-direction: column; /* Stack items vertically */
-      align-items: left; /* Center align items */
-      gap: 20px; /* Space between the visualizations */
-      padding: 20px; /* Padding around the container */
+      flex-direction: column; /* Stack vertically */
+      align-items: left; /* Center horizontally */
     }
 
-    /* Individual visualization container */
+    .row {
+      display: flex; /* Create a row for each set of visualizations */
+      justify-content: center; /* Center the content */
+      margin-bottom: 20px; /* Space between rows */
+    }
+
     .vis-container {
-      display: flex;
-      justify-content: left;
-      border: 1px solid #ccc; 
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+      margin: 0 10px; /* Add space between visualizations */
+      background: #444; /* Background for the containers */
+      border-radius: 5px; /* Rounded corners */
     }
-    
-    #vis1 {width: 600px;height: 400px;}
 
-    #vis2 {width: 400px;height: 100px;}
+    #vis1 {
+      width: 600px;
+      height: 400px;
+    }
 
-    #vis3 {width: 400px;height: 200px;}
+    #vis2 {
+      width: 400px;
+      height: 300px;
+    }
 
-    #vis4 {width: 200px;height: 400px;}
+    #vis3 {
+      width: 350px;
+      height: 400px;
+    }
+
+    #vis4 {
+      width: 240px;
+      height: 400px;
+    }
   </style>
 </head>
 
 <body>
-  <h1 style="text-align: center;">Foreign Arrival to Malaysia (Jan 2020 - Jun 2024)</h1>
-
+  <h1>Foreign Arrival to Malaysia (Jan 2020 - Jun 2024)</h1>
+  
   <div class="container">
-    <div id="vis1" class="vis-container"></div>
-    <div id="vis2" class="vis-container"></div>
-    <div id="vis3" class="vis-container"></div>
-    <div id="vis4" class="vis-container"></div>
+    <div class="row">
+      <div id="vis1" class="vis-container"></div>
+    </div>
+    <div class="row">
+      <div id="vis2" class="vis-container"></div>
+      <div id="vis3" class="vis-container"></div>
+    </div>
+    <div class="row">
+      <div id="vis4" class="vis-container"></div>
+    </div>
   </div>
 
   <script type="text/javascript">
@@ -63,10 +84,10 @@
     var streamgraph = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/timeline.vg.json";
     var isotype = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/isotype.vg.json";
 
-    vegaEmbed('#vis1', map, { "actions": false, width: "600", height: "400" });
-    vegaEmbed('#vis2', streamgraph, { "actions": false, width: "container", height: "container" });
-    vegaEmbed('#vis3', bubble, { 'actions': false, width: "container", height: "container" });
-    vegaEmbed('#vis4', isotype, { 'actions': false, width: "container", height: "container" });
+    vegaEmbed('#vis1', map, { "actions": false });
+    vegaEmbed('#vis2', streamgraph, { "actions": false });
+    vegaEmbed('#vis3', bubble, { 'actions': false });
+    vegaEmbed('#vis4', isotype, { 'actions': false });
   </script>
 </body>
 

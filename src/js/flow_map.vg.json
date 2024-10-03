@@ -2,6 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Flow Map of Foreigners to Malaysia",
   "background": "#e0f7fa",
+  "width": 600,
+  "height": 400,
   "layer": [
     {
       "data": {
@@ -109,7 +111,8 @@
           {
             "field": "arrivals",
             "type": "quantitative",
-            "title": "Arrivals"
+            "title": "Arrivals",
+            "format":",.0f"
           }
         ]
       }
@@ -159,7 +162,7 @@
         "size": {
           "field": "arrivals",
           "type": "quantitative",
-          "scale": {"type": "sqrt", "range": [20, 1000]}
+          "scale": {"type": "sqrt", "range": [20, 800]}
         }
       }
     }

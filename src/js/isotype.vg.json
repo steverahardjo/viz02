@@ -50,6 +50,8 @@
       "value": "#FFC72C"
     }
   },
+  "width": 240,
+  "height": 400,
   "config": {
     "background": "#DA291C",
     "axis": {
