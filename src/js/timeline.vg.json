@@ -11,6 +11,11 @@
           "type": "csv"
         }
       },
+      "params":[{
+        "name":"all",
+        "select":{"type":"point", "fields": ["sub-region"]},
+        "bind":"legend"
+      }],
       "mark": {
         "type": "area",
         "interpolate": "monotone",
@@ -42,6 +47,11 @@
             "title": "Sub-Region"
           }
         },
+        "opacity": {
+          "condition": {"param": "all", "value": 1},
+          "value": 0.1
+        }
+        ,
         "tooltip": [
           {"field": "date", "type": "temporal", "title": "Date"},
           {"field": "arrivals", "type": "quantitative", "title": "Arrivals"},

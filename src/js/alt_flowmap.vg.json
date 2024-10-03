@@ -1,0 +1,48 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Flow Map of Foreigners to Malaysia",
+    "width": 600,
+    "height": 500,
+    "layer": [
+      {
+        "data": {
+          "url": "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/world-110m.json",
+          "format": {
+            "type": "topojson",
+            "feature": "countries"
+          }
+        },
+        "transform": [
+          {
+            "lookup": "id",
+            "from": {
+              "data": {
+                "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/grouped_arrivals.csv",
+                "format": {"type": "csv"}
+              },
+              "key": "code",
+              "fields": ["arrivals"]
+            },
+            "as": ["arrivals"]
+          }
+        ],
+        "projection": {
+          "type": "mercator"
+        },
+        "mark": {
+          "type": "geoshape",
+          "stroke": "white"
+        },
+        "encoding": {
+          "color": {
+            "field": "arrivals_male",
+            "type": "quantitative",
+            "scale": {
+              "range": ["#f7f7f7", "#b2182b"]
+            }
+          }
+        }
+      }
+    ]
+  }
+  
