@@ -24,7 +24,7 @@
     .container {
       display: flex;
       flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center align items */
+      align-items: left; /* Center align items */
       gap: 20px; /* Space between the visualizations */
       padding: 20px; /* Padding around the container */
     }
@@ -32,32 +32,18 @@
     /* Individual visualization container */
     .vis-container {
       display: flex;
-      justify-content: center; /* Center the visualizations horizontally */
-      border: 1px solid #ccc; /* Optional: Add a border for visual separation */
-      padding: 10px; /* Optional: Padding inside each visualization */
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for a better look */
+      justify-content: left;
+      border: 1px solid #ccc; 
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
     }
+    
+    #vis1 {width: 600px;height: 400px;}
 
-    /* Set fixed heights for visualization containers */
-    #vis1 {
-      width: 600px;
-      height: 400px;
-    }
+    #vis2 {width: 400px;height: 100px;}
 
-    #vis2 {
-      width: 400px;
-      height: 100px;
-    }
+    #vis3 {width: 400px;height: 200px;}
 
-    #vis3 {
-      width: 400px;
-      height: 200px;
-    }
-
-    #vis4 {
-      width: 200px;
-      height: 400px;
-    }
+    #vis4 {width: 200px;height: 400px;}
   </style>
 </head>
 
@@ -77,10 +63,10 @@
     var streamgraph = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/timeline.vg.json";
     var isotype = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/isotype.vg.json";
 
-    vegaEmbed('#vis1', map, { "actions": false });
-    vegaEmbed('#vis2', streamgraph, { "actions": false });
-    vegaEmbed('#vis3', bubble, { 'actions': false });
-    vegaEmbed('#vis4', isotype, { 'actions': false });
+    vegaEmbed('#vis1', map, { "actions": false, width: "600", height: "400" });
+    vegaEmbed('#vis2', streamgraph, { "actions": false, width: "container", height: "container" });
+    vegaEmbed('#vis3', bubble, { 'actions': false, width: "container", height: "container" });
+    vegaEmbed('#vis4', isotype, { 'actions': false, width: "container", height: "container" });
   </script>
 </body>
 

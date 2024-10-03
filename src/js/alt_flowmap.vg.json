@@ -1,8 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "Flow Map of Foreigners to Malaysia",
-    "width": 600,
-    "height": 500,
     "layer": [
       {
         "data": {
