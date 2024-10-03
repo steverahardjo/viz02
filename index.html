@@ -1,40 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Multiple Visualisations | An Example</title>
-  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Steve's Arrival Viz</title>
+
+  <!-- Import Vega & Vega-Lite -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
 
   <!-- Import pure.css -->
-  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
-    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
 
   <!-- Google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
+  <style>
+    /* Container for stacking visualizations vertically */
+    .container {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center align items */
+      gap: 20px; /* Space between the visualizations */
+      padding: 20px; /* Padding around the container */
+    }
+
+    /* Individual visualization container */
+    .vis-container {
+      display: flex;
+      justify-content: center; /* Center the visualizations horizontally */
+      border: 1px solid #ccc; /* Optional: Add a border for visual separation */
+      padding: 10px; /* Optional: Padding inside each visualization */
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for a better look */
+    }
+
+    /* Set fixed heights for visualization containers */
+    #vis1 {
+      width: 600px;
+      height: 400px;
+    }
+
+    #vis2 {
+      width: 400px;
+      height: 100px;
+    }
+
+    #vis3 {
+      width: 400px;
+      height: 200px;
+    }
+
+    #vis4 {
+      width: 200px;
+      height: 400px;
+    }
+  </style>
 </head>
 
 <body>
   <h1 style="text-align: center;">Foreign Arrival to Malaysia (Jan 2020 - Jun 2024)</h1>
 
-  <!-- Container for the Vega-Lite visualization -->
-  <div id="vis" class= "vis-container" style="width: 600px; height: 400px;"></div>
-
+  <div class="container">
+    <div id="vis1" class="vis-container"></div>
+    <div id="vis2" class="vis-container"></div>
+    <div id="vis3" class="vis-container"></div>
+    <div id="vis4" class="vis-container"></div>
+  </div>
 
   <script type="text/javascript">
-    var specVis1 = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/flow_map.vg.json";
+    var map = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/flow_map.vg.json";
+    var bubble = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/bubblechart.vg.json";
+    var streamgraph = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/timeline.vg.json";
+    var isotype = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/isotype.vg.json";
 
-    vegaEmbed('#vis', specVis1, { "actions": false });
-    
-
+    vegaEmbed('#vis1', map, { "actions": false });
+    vegaEmbed('#vis2', streamgraph, { "actions": false });
+    vegaEmbed('#vis3', bubble, { 'actions': false });
+    vegaEmbed('#vis4', isotype, { 'actions': false });
   </script>
 </body>
 
 </html>
+
 

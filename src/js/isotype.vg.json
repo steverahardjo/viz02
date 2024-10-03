@@ -2,9 +2,12 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Isotype Chart representing Adjust Price per Country",
   "title": {
-    "text": "Big Mac Index between Malaysia & top 8 Countries on Arrivals",
-    "color": "#FFFF"
-  },  "data": {
+    "text": "Big Mac Index between of Top 8 Countries on Arrivals",
+    "color": "#FFFF",
+    "fontWeight": "bold",
+    "fontSize": 18
+  },
+  "data": {
     "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/new_isotype.csv"
   },
   "mark": {
@@ -16,31 +19,38 @@
       "field": "col",
       "type": "ordinal",
       "axis": {
+        "labelAngle": 0,
         "title": "Adjusted price of Big Mac",
-        "labelFont": "mcd",
-        "titleFont": "mcd"    
+        "labelFont": "sans-serif",
+        "labelFontWeight": "bold",
+        "titleFont": "sans-serif",
+        "titleFontWeight": "bold",
+        "titleFontSize":16,
+        "labelFontSize":16
       }
     },
     "y": {
+      "title":null,
       "field": "name",
       "type": "ordinal",
       "axis": {
-        "title": "Country",
         "labelAngle": 0,
-        "labelFontSize": 12
+        "labelFontSize": 14,
+        "labelFont": "sans-serif",
+        "labelFontWeight": "bold"
       }
     },
     "shape": {
       "value": "M17.243 3.006c2.066 0 3.742 8.714 3.742 19.478H24c0-11.588-3.042-20.968-6.766-20.968-2.127 0-4.007 2.81-5.248 7.227-1.241-4.416-3.121-7.227-5.231-7.227C3.031 1.516 0 10.888 0 22.476h3.014c0-10.763 1.658-19.47 3.724-19.47 2.066 0 3.741 8.05 3.741 17.98h2.997c0-9.93 1.684-17.98 3.75-17.98Z"
     },
     "size": {
-      "value": 5
+      "value": 4
     },
     "color": {
       "value": "#FFC72C"
     }
   },
-  "width": 310,
+  "width": 240,
   "height": 400,
   "config": {
     "background": "#DA291C",
@@ -54,6 +64,8 @@
     }
   }
 }
+
+
 
 
 
