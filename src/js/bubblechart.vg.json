@@ -35,12 +35,13 @@
       }
     },
     "color": {
-      "field": "arrivals",
+      "field": "Distance_km",
       "type": "quantitative",
       "scale": {
-        "range": ["white", "red"]
-      },
-      "title": "Number of Arrivals"
+        "domain": [0, 1000, 5000, 10000, 20000],
+        "range": ["blue", "lightblue", "white", "lightred", "red"]},
+      "title": "Distance",
+      "legend":null
     },
     "tooltip": [
       { "field": "name", "type": "nominal", "title": "Country" },

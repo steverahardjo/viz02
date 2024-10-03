@@ -41,23 +41,23 @@
     }
 
     #vis1 {
-      width: 600px;
-      height: 600px;
+      width: 400;
+      height: 600;
     }
 
     #vis2 {
-      width: 400px;
-      height: 300px;
+      width: auto;
+      height: auto;
     }
 
     #vis3 {
-      width: 600px;
-      height: 380px;
+      width: auto;
+      height: auto;
     }
 
     #vis4 {
-      width: 300px;
-      height: 400px;
+      width: auto;
+      height: auto;
     }
   </style>
 </head>
@@ -84,7 +84,7 @@
     var streamgraph = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/timeline.vg.json";
     var isotype = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/isotype.vg.json";
 
-    vegaEmbed('#vis1', map, { "actions": false });
+    vegaEmbed('#vis1', map, { "actions": false, });
     vegaEmbed('#vis2', streamgraph, { "actions": false });
     vegaEmbed('#vis3', bubble, { 'actions': false });
     vegaEmbed('#vis4', isotype, { 'actions': false });
