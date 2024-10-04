@@ -3,7 +3,7 @@
   "description": "Isotype Chart representing Adjust Price per Country",
   "title": {
     "text": "Big Mac Index between of Top 8 Countries on Arrivals",
-    "color": "#FFFF",
+    "color": "yellow",
     "fontWeight": "bold",
     "fontSize": 18
   },

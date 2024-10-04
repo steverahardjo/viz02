@@ -1,0 +1,16 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Bump chart",
+    "data": {
+        "url":"https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/bumpchart.csv"
+    },
+    "mark": {"type": "line", "orient": "vertical", "strokeWidth": 3, "point":true},
+    "encoding": {
+      "x": {"field": "Year", "type": "temporal"},
+      "y": {"field": "Ranking", "type": "ordinal"},
+      "order": {"field": "Country", "type": "nominal"},
+      "color": {
+        "field": "Country", "type": "nominal"
+        }
+      }
+    }

@@ -1,46 +1,49 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Flow Map of Foreigners to Malaysia",
-    "layer": [
-      {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 700,
+  "height": 500,
+  "title": {
+    "text": "Flow map",
+    "fontSize": 20
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Cian2001/irs_datasets/main/world_map.json",
+    "format": {"property": "features"}
+  },
+  "projection": {"type": "mercator"},
+  "transform": [
+    {
+      "lookup": "properties.iso_a3",
+      "from": {
+        "key": "code",
+        "fields": ["arrivals"],
         "data": {
-          "url": "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/world-110m.json",
-          "format": {
-            "type": "topojson",
-            "feature": "countries"
-          }
-        },
-        "transform": [
-          {
-            "lookup": "id",
-            "from": {
-              "data": {
-                "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/grouped_arrivals.csv",
-                "format": {"type": "csv"}
-              },
-              "key": "code",
-              "fields": ["arrivals"]
-            },
-            "as": ["arrivals"]
-          }
-        ],
-        "projection": {
-          "type": "mercator"
-        },
-        "mark": {
-          "type": "geoshape",
-          "stroke": "white"
-        },
-        "encoding": {
-          "color": {
-            "field": "arrivals_male",
-            "type": "quantitative",
-            "scale": {
-              "range": ["#f7f7f7", "#b2182b"]
-            }
-          }
-        }
+          "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/grouped_arrivals.csv",
+          "format": {"type": "csv"}
+        } 
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    
+    "stroke": "#141010",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "color": {
+      "field": "arrivals",
+      "type": "quantitative",
+      "scale": {"scheme": "oranges"}
+    },
+    "tooltip": [
+      {"field": "properties.name", "title": "Country"},
+      {
+        "field": "arrivals",
+        "type": "quantitative",
+        "title": "Arrivals: "
       }
     ]
-  }
-  
+  },
+  "config": {"mark": {"invalid": null}}
+}

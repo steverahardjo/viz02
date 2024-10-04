@@ -1,16 +1,23 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Average of Overall Arrivals by Sub-Region to Malaysia",
+  "title": {
+    "text": "Average of Overall Arrivals by Sub-Region to Malaysia",
+    "fontSize": 18,
+    "anchor": "start",
+    "color": "darkblue",
+    "fontWeight": "bold"
+  },
   "width": 600,
   "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/streamgraph.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "background": "lightgray",
   "layer": [
     {
-      "data": {
-        "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/streamgraph.csv",
-        "format": {
-          "type": "csv"
-        }
-      },
       "params": [
         {
           "name": "all",
@@ -29,10 +36,12 @@
           "field": "date",
           "type": "temporal",
           "axis": {
-            "title":null,
+            "title": null,
             "grid": false,
             "tickCount": 40,
-            "labelFontSize": 11
+            "labelFontSize": 12,
+            "labelColor": "gray",
+            "titleColor": "darkblue"
           }
         },
         "y": {
@@ -41,15 +50,21 @@
           "type": "quantitative",
           "axis": {
             "title": "Arrivals",
-            "titleFontSize":12
+            "titleFontSize": 14,
+            "titleColor": "darkblue"
           },
-          "stack": "center"
+          "stack": "zero"
         },
         "color": {
           "field": "sub-region",
           "type": "nominal",
+          "scale": {
+            "scheme": "category20"
+          },
           "legend": {
-            "title": "Sub-Region"
+            "title": "Sub-Region",
+            "labelFontSize": 12,
+            "titleFontSize": 14
           }
         },
         "opacity": {
@@ -58,7 +73,7 @@
         },
         "tooltip": [
           { "field": "date", "type": "temporal", "title": "Date" },
-          { "field": "arrivals", "type": "quantitative", "title": "Arrivals" },
+          { "field": "arrivals", "type": "quantitative", "title": "Arrivals", "format": ",.0f" },
           { "field": "sub-region", "type": "nominal", "title": "Sub-Region" }
         ]
       }
@@ -69,7 +84,6 @@
           { "Date": "2020-03-11", "Event": "WHO declares COVID-19 a global pandemic." },
           { "Date": "2022-04-01", "Event": "Malaysia reopens borders for international travelers after COVID-19 restrictions." },
           { "Date": "2022-02-24", "Event": "Beginning of the Russo-Ukrainian War." },
-          { "Date": "2021-06-21", "Event": "Start of Summer Holiday" },
           { "Date": "2022-02-01", "Event": "Lunar New Year" },
           { "Date": "2022-06-22", "Event": "Start of Summer Holiday" },
           { "Date": "2023-01-22", "Event": "Lunar New Year" },
@@ -79,7 +93,7 @@
       "mark": {
         "type": "rule",
         "color": "red",
-        "strokeWidth": 2
+        "strokeWidth": 4
       },
       "encoding": {
         "x": {
@@ -95,8 +109,15 @@
         ]
       }
     }
-  ]
+  ],
+  "config": {
+    "mark": {
+      "invalid": null
+    }
+  }
 }
+
+
 
 
 
