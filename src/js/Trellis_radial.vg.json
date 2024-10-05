@@ -1,29 +1,55 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A simple radial chart with embedded data.",
+  "description": "A radial chart showing the breakdown of expenditures by component across different years.",
   "data": {
-    "url":"https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/expenditure.csv"
-  },  
+    "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/expenditure.csv"
+  },
   "facet": {
     "column": {
-      "field": "Year"
+      "field": "Year",
+      "type": "ordinal",
+      "title": "Year"
     }
   },
-  "spec":{
-    "width": 300,
-    "height": 300,
-    "layer": [{
-      "mark": {"type": "arc", "innerRadius": 100, "stroke": "#fff"}
-    },{
-      "mark": {"type": "text", "radiusOffset": 120},
-      "encoding": {
-        "text": {"field": "RM", "type": "quantitative"}
+  "spec": {
+    "width": 200,
+    "height": 200,
+    "layer": [
+      {
+        "mark": {
+          "type": "arc",
+          "innerRadius": 50,
+          "stroke": "#fff"
+        },
+        "encoding": {
+          "theta": {
+            "field": "Percentage",
+            "type": "quantitative",
+            "stack": true
+          },
+          "color": {
+            "field": "Component",
+            "type": "nominal",
+            "legend": {
+              "title": "Component"
+            }
+          },
+          "tooltip": [
+            {"field": "Component", "type": "nominal", "title": "Component"},
+            {"field": "Percentage", "type": "quantitative", "title": "Percentage"},
+            {"field": "RM", "type": "quantitative", "title": "Expenditure (RM)"}
+          ]
+        }
       }
-    }],
-    "encoding": {
-      "theta": {"field": "Percentage", "type": "quantitative", "stack": true},
-      "radius": {"field": "RM", "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
-      "color": {"field": "Component", "type": "nominal"}
+    ]
+  },
+  "config": {
+    "facet": {
+      "spacing": 5
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 14
     }
   }
 }

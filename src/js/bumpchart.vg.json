@@ -10,7 +10,21 @@
       "y": {"field": "Ranking", "type": "ordinal"},
       "order": {"field": "Country", "type": "nominal"},
       "color": {
-        "field": "Country", "type": "nominal"
+        "field": "Country", "type": "nominal",
+        "scale": {
+          "range": ["#e6194B", "#f58231", "#911eb4", "#fabed4", "#57FF33", "#33FFF6"]
+        }
+        }
+      },
+      "config": {
+        "background": "dark",
+        "axis": {
+          "labelColor": "#ADEFD1FF",
+          "titleColor": "#ADEFD1FF"
+        },
+        "legend": {
+          "labelColor": "#ADEFD1FF",
+          "titleColor": "#ADEFD1FF"
         }
       }
     }

@@ -4,18 +4,17 @@
     "text": "Average of Overall Arrivals by Sub-Region to Malaysia",
     "fontSize": 18,
     "anchor": "start",
-    "color": "darkblue",
-    "fontWeight": "bold"
+    "fontWeight": "bold",
+    "color":"#ADEFD1FF"
   },
   "width": 600,
-  "height": 300,
+  "height": 250,
   "data": {
     "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/streamgraph.csv",
     "format": {
       "type": "csv"
     }
   },
-  "background": "lightgray",
   "layer": [
     {
       "params": [
@@ -38,10 +37,8 @@
           "axis": {
             "title": null,
             "grid": false,
-            "tickCount": 45,
-            "labelFontSize": 12,
-            "labelColor": "gray",
-            "titleColor": "darkblue"
+            "tickCount": 40,
+            "labelFontSize": 12
           }
         },
         "y": {
@@ -50,8 +47,7 @@
           "type": "quantitative",
           "axis": {
             "title": "Arrivals",
-            "titleFontSize": 14,
-            "titleColor": "darkblue"
+            "titleFontSize": 14
           },
           "stack": "zero"
         },
@@ -111,6 +107,15 @@
     }
   ],
   "config": {
+    "background": "dark",
+    "axis": {
+      "labelColor": "#ADEFD1FF",
+      "titleColor": "#ADEFD1FF"
+    },
+    "legend": {
+      "labelColor": "#ADEFD1FF",
+      "titleColor": "#ADEFD1FF"
+    },
     "mark": {
       "invalid": null
     }

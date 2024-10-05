@@ -20,12 +20,22 @@
       background-color: #333;
       color: #fff;
       text-align: center;
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+    }
+
+    .main-container {
+      background-color: #f8f8f8; /* Off-white color */
+      border-radius: 10px; /* Rounded corners */
+      padding: 20px; /* Space inside the container */
+      margin: 20px; /* Space outside the container */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
     }
 
     .container {
       display: flex;
       flex-direction: column; /* Stack vertically */
-      align-items: left; /* Center horizontally */
+      align-items: center; /* Center horizontally */
     }
 
     .row {
@@ -36,28 +46,13 @@
 
     .vis-container {
       margin: 0 10px; /* Add space between visualizations */
-      background: #444; /* Background for the containers */
+      background: #444; /* Background for the visualization containers */
       border-radius: 5px; /* Rounded corners */
     }
 
-    #vis1 {
-      width: 400;
-      height: 600;
-    }
-
-    #vis2 {
-      width: auto;
-      height: auto;
-    }
-
-    #vis3 {
-      width: auto;
-      height: auto;
-    }
-
-    #vis4 {
-      width: auto;
-      height: auto;
+    #vis1, #vis2, #vis3, #vis4 {
+      width: 400px; /* Set a fixed width for consistency */
+      height: 600px; /* Set a fixed height */
     }
   </style>
 </head>
@@ -65,16 +60,18 @@
 <body>
   <h1>Foreign Arrival to Malaysia (Jan 2020 - Jun 2024)</h1>
   
-  <div class="container">
-    <div class="row">
-      <div id="vis1" class="vis-container"></div>
-    </div>
-    <div class="row">
-      <div id="vis2" class="vis-container"></div>
-      <div id="vis3" class="vis-container"></div>
-    </div>
-    <div class="row">
-      <div id="vis4" class="vis-container"></div>
+  <div class="main-container">
+    <div class="container">
+      <div class="row">
+        <div id="map" class="vis-container"></div>
+      </div>
+      <div class="row">
+        <div id="stream" class="vis-container"></div>
+      </div>
+      <div class="row">
+        <div id="bubble" class="vis-container"></div>
+        <div id="vis4" class="vis-container"></div>
+      </div>
     </div>
   </div>
 
@@ -84,13 +81,11 @@
     var streamgraph = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/timeline.vg.json";
     var isotype = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/isotype.vg.json";
 
-    vegaEmbed('#vis1', map, { "actions": false, });
-    vegaEmbed('#vis2', streamgraph, { "actions": false });
-    vegaEmbed('#vis3', bubble, { 'actions': false });
+    vegaEmbed('#map', map, { "actions": false, });
+    vegaEmbed('#stream', streamgraph, { "actions": false });
+    vegaEmbed('#bubble', bubble, { 'actions': false });
     vegaEmbed('#vis4', isotype, { 'actions': false });
   </script>
 </body>
 
 </html>
-
-
