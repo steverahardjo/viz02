@@ -31,7 +31,8 @@
       "field": "arrivals",
       "type": "quantitative",
       "scale": {
-        "range": [50, 800]
+        "range": [50,250],
+        "domain":[2000000, 14000000]
       }
     },
     "color": {
@@ -46,8 +47,8 @@
     "tooltip": [
       { "field": "name", "type": "nominal", "title": "Country" },
       { "field": "arrivals", "type": "quantitative", "title": "Number of Arrivals","format": ",.0f" },
-      { "field": "Distance_km", "type": "quantitative", "title": "Distance to Malaysia (km)","format": ".2f" },
-      { "field": "gdp_capita", "type": "quantitative", "title": "GDP per capita (dollar)","format": ".2f" }
+      { "field": "Distance_km", "type": "quantitative", "title": "Distance to Malaysia (km)","format": ",.0f" },
+      { "field": "gdp_capita", "type": "quantitative", "title": "GDP per capita (dollar)","format": ",.0f" }
     ]
   },
   "config": {
