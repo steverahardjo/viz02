@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A radial chart showing the breakdown of expenditures by component across different years.",
+  "title": "Radial Chart of Annual Tourist Expenditure",
   "data": {
     "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/expenditure.csv"
   },
@@ -30,26 +30,48 @@
           "color": {
             "field": "Component",
             "type": "nominal",
+            "scale": {
+              "scheme": "category20"
+            },
             "legend": {
               "title": "Component"
             }
           },
           "tooltip": [
-            {"field": "Component", "type": "nominal", "title": "Component"},
-            {"field": "Percentage", "type": "quantitative", "title": "Percentage"},
-            {"field": "RM", "type": "quantitative", "title": "Expenditure (RM)"}
+            {
+              "field": "Component",
+              "type": "nominal",
+              "title": "Component"
+            },
+            {
+              "field": "Percentage",
+              "type": "quantitative",
+              "title": "Percentage"
+            },
+            {
+              "field": "RM",
+              "type": "quantitative",
+              "title": "Expenditure (RM)"
+            }
           ]
         }
       }
     ]
   },
   "config": {
+    "background": "dark",
     "facet": {
       "spacing": 5
     },
     "axis": {
       "labelFontSize": 12,
-      "titleFontSize": 14
+      "titleFontSize": 14,
+      "labelColor": "#ADEFD1FF",
+      "titleColor": "#ADEFD1FF"
+    },
+    "legend": {
+      "labelColor": "#ADEFD1FF",
+      "titleColor": "#ADEFD1FF"
     }
   }
 }

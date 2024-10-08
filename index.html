@@ -5,61 +5,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Steve's Arrival Viz</title>
-  
-  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+
+  <!-- Import Vega & Vega-Lite -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
-  
+
   <!-- Import pure.css -->
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-  
+
   <style>
     body {
       font-family: 'Open Sans', sans-serif;
       background-color: #333;
       color: #fff;
-      text-align: center;
-      margin: 0; /* Remove default margin */
-      padding: 0; /* Remove default padding */
+      text-align: left;
+      margin: 0;
+      padding: 0;
     }
 
     .main-container {
-      background-color: #f8f8f8; /* Off-white color */
-      border-radius: 10px; /* Rounded corners */
-      padding: 20px; /* Space inside the container */
-      margin: 20px; /* Space outside the container */
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+      background-color: #f8f8f8;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     .container {
       display: flex;
-      flex-direction: column; /* Stack vertically */
-      align-items: center; /* Center horizontally */
+      flex-direction: column;
+      align-items: center;
     }
 
     .row {
-      display: flex; /* Create a row for each set of visualizations */
-      justify-content: center; /* Center the content */
-      margin-bottom: 20px; /* Space between rows */
+      display: flex;
+      justify-content: left;
+      margin-bottom: 20px;
     }
 
     .vis-container {
-      margin: 0 10px; /* Add space between visualizations */
-      background: #444; /* Background for the visualization containers */
-      border-radius: 5px; /* Rounded corners */
+      margin: 0 10px; 
+      background: #444;
+      border-radius: 5px; 
+      width: auto;
+      max-width: 100%;
+      padding: 10px;
     }
 
-    #vis1, #vis2, #vis3, #vis4 {
-      width: 400px; /* Set a fixed width for consistency */
-      height: 600px; /* Set a fixed height */
+    #filter {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+      background: #555;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    #filter input {
+      margin-bottom: 10px; /* Space between filter inputs */
+      padding: 5px; /* Padding inside inputs */
+      border: 1px solid #ccc; /* Border for inputs */
+      border-radius: 3px; /* Rounded corners */
+      width: 200px; /* Set width for inputs */
+    }
+
+    #stats {
+      display: flex; /* Display stats in a row */
+      justify-content: space-between; /* Space out the bubble and trellis/bump charts */
+      align-items: flex-start; /* Align items to the top */
+      margin-top: 20px; /* Space above stats section */
+    }
+
+    #bump-trellis {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
   </style>
 </head>
 
 <body>
   <h1>Foreign Arrival to Malaysia (Jan 2020 - Jun 2024)</h1>
-  
+
   <div class="main-container">
     <div class="container">
       <div class="row">
@@ -70,7 +98,15 @@
       </div>
       <div class="row">
         <div id="bubble" class="vis-container"></div>
-        <div id="vis4" class="vis-container"></div>
+      </div>
+      <div class="row">
+        <div id="bump" class="vis-container"></div>
+      </div>
+      <div class="row">
+        <div id="trellis" class="vis-container"></div>
+      </div>
+      <div class="row">
+        <div id="isotype" class="vis-container"></div>
       </div>
     </div>
   </div>
@@ -80,12 +116,18 @@
     var bubble = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/bubblechart.vg.json";
     var streamgraph = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/timeline.vg.json";
     var isotype = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/isotype.vg.json";
+    var trellis = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/Trellis_radial.vg.json";
+    var bump = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/bumpchart.vg.json";
 
-    vegaEmbed('#map', map, { "actions": false, });
+    vegaEmbed('#map', map, { "actions": false });
     vegaEmbed('#stream', streamgraph, { "actions": false });
-    vegaEmbed('#bubble', bubble, { 'actions': false });
-    vegaEmbed('#vis4', isotype, { 'actions': false });
+    vegaEmbed('#bubble', bubble, { "actions": false });
+    vegaEmbed('#bump', bump, { "actions": false });
+    vegaEmbed('#trellis', trellis, { "actions": false });
+    vegaEmbed('#isotype', isotype, { "actions": false });
   </script>
 </body>
 
 </html>
+
+

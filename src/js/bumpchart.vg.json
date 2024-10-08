@@ -4,6 +4,7 @@
     "data": {
         "url":"https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/bumpchart.csv"
     },
+    "width":200,
     "mark": {"type": "line", "orient": "vertical", "strokeWidth": 3, "point":true},
     "encoding": {
       "x": {"field": "Year", "type": "temporal"},
@@ -12,7 +13,7 @@
       "color": {
         "field": "Country", "type": "nominal",
         "scale": {
-          "range": ["#e6194B", "#f58231", "#911eb4", "#fabed4", "#57FF33", "#33FFF6"]
+          "range": ["blue", "#f58231", "#911eb4", "#fabed4", "#57FF33", "beige"]
         }
         }
       },

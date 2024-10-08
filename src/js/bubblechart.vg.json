@@ -3,8 +3,8 @@
   "data": {
     "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/bubbleChart_pictograph.csv"
   },
-  "width": 400,
-  "height": 300,
+"width": 500,
+  "height": 400,
   "mark": {
     "type": "circle"
   },
