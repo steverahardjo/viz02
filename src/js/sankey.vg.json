@@ -1,42 +1,60 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-        "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/sankey.csv"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/sankey.csv"
+  },
+  "height": 100,
+  "width": 750,
+  "title": {
+    "text": "Heat map of Overall Gender and Destination Distribution",
+    "color": "#FFFFFF"              
+  },
+  "config": {
+    "view": {
+      "strokeWidth": 0,
+      "step": 13
     },
-    "title": "Heat map of Overall Gender and Destination Distribution",
-    "config": {
-        "view": {
-            "strokeWidth": 0,
-            "step": 13
-        },
-        "axis": {
-            "domain": false
-        }
+    "axis": {
+      "domain": false,
+      "labelColor": "#FFFFFF",         
+      "titleColor": "#FFFFFF"          
     },
-    "mark": "rect",
-    "encoding": {
-        "x": {
-            "field": "soe",
-            "type": "ordinal",
-            "title": "State of Arrival",
-            "axis": {
-                "labelAngle": 0,
-                "format": "%e"
-            }
-        },
-        "y": {
-            "field": "",
-            "timeUnit": "month",
-            "type": "ordinal",
-            "title": "Month"
-        },
-        "color": {
-            "field": "temp_max",
-            "aggregate": "max",
-            "type": "quantitative",
-            "legend": {
-                "title": null
-            }
-        }
+    "background": "#333333"            
+  },
+  "mark": {
+    "type": "rect",
+    "stroke": "darkred",
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "soe",
+      "type": "ordinal",
+      "title": "State of Arrival",
+      "axis": {
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "gender",
+      "type": "ordinal",
+      "title": "Gender"
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "legend": {
+        "title": "Arrivals Count",
+        "labelColor": "#FFFFFF",
+        "titleColor": "#FFFFFF"
+      },
+      "scale": {
+        "domain": [41, 10000, 300000, 8400000, 11200000, 14000000],
+        "range": ["#e0bbff", "#c197d7", "#a373af", "#844f87", "#4a148c"]
+      }
     }
   }
+}
+
+
+  

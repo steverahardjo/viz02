@@ -63,18 +63,18 @@
     }
 
     #filter input {
-      margin-bottom: 10px; /* Space between filter inputs */
-      padding: 5px; /* Padding inside inputs */
-      border: 1px solid #ccc; /* Border for inputs */
-      border-radius: 3px; /* Rounded corners */
-      width: 200px; /* Set width for inputs */
+      margin-bottom: 10px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      width: 200px;
     }
 
     #stats {
-      display: flex; /* Display stats in a row */
-      justify-content: space-between; /* Space out the bubble and trellis/bump charts */
-      align-items: flex-start; /* Align items to the top */
-      margin-top: 20px; /* Space above stats section */
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 20px;
     }
 
     #bump-trellis {
@@ -95,6 +95,9 @@
       </div>
       <div class="row">
         <div id="stream" class="vis-container"></div>
+      </div>
+      <div class="row">
+        <div id="sankey" class="vis-container"></div>
       </div>
       <div class="row">
         <div id="bubble" class="vis-container"></div>
@@ -118,6 +121,7 @@
     var isotype = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/isotype.vg.json";
     var trellis = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/Trellis_radial.vg.json";
     var bump = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/bumpchart.vg.json";
+    var sankey = "https://github.com/steverahardjo/viz02/blob/main/src/js/sankey.vg.json";
 
     vegaEmbed('#map', map, { "actions": false });
     vegaEmbed('#stream', streamgraph, { "actions": false });
@@ -125,6 +129,7 @@
     vegaEmbed('#bump', bump, { "actions": false });
     vegaEmbed('#trellis', trellis, { "actions": false });
     vegaEmbed('#isotype', isotype, { "actions": false });
+    vegaEmbed('#sankey', sankey, {"actions":false});
   </script>
 </body>
 
