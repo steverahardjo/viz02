@@ -61,7 +61,7 @@
   "config": {
     "background": "dark",
     "facet": {
-      "spacing": 5
+      "spacing": 2
     },
     "axis": {
       "labelFontSize": 12,
@@ -72,6 +72,10 @@
     "legend": {
       "labelColor": "#ADEFD1FF",
       "titleColor": "#ADEFD1FF"
+    },
+    "title":{
+      "color":"#ADEFD1FF",
+      "fontSize":20
     }
   }
 }

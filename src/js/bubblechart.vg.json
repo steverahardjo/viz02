@@ -17,22 +17,22 @@
       }
     },
     "y": {
-      "field": "gdp_capita",
+      "field": "arrivals",
       "type": "quantitative",
-      "title": "GDP per capita",
+      "title": "Total Arrivals",
       "scale": {
         "type": "linear"
       },
       "axis":{
-        "title":"GDP per Capita"
+        "title":"Arrivals"
       }
     },
     "size": {
-      "field": "arrivals",
+      "field": "gdp_capita",
       "type": "quantitative",
+      "title":"GDP per Capita",
       "scale": {
-        "range": [50,250],
-        "domain":[2000000, 14000000]
+        "range": [0,500]
       }
     },
     "color": {

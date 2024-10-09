@@ -1,0 +1,42 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/sankey.csv"
+    },
+    "title": "Heat map of Overall Gender and Destination Distribution",
+    "config": {
+        "view": {
+            "strokeWidth": 0,
+            "step": 13
+        },
+        "axis": {
+            "domain": false
+        }
+    },
+    "mark": "rect",
+    "encoding": {
+        "x": {
+            "field": "soe",
+            "type": "ordinal",
+            "title": "State of Arrival",
+            "axis": {
+                "labelAngle": 0,
+                "format": "%e"
+            }
+        },
+        "y": {
+            "field": "",
+            "timeUnit": "month",
+            "type": "ordinal",
+            "title": "Month"
+        },
+        "color": {
+            "field": "temp_max",
+            "aggregate": "max",
+            "type": "quantitative",
+            "legend": {
+                "title": null
+            }
+        }
+    }
+  }

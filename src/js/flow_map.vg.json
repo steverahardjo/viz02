@@ -19,7 +19,7 @@
       "mark": {
         "type": "geoshape",
         "stroke": "white",
-        "fill": "#A88F59"
+        "fill": "darkslategray"
       }
     },
     {
@@ -145,7 +145,7 @@
       ],
       "mark": {
         "type": "circle",
-        "color": "orange",
+        "color": "orangered",
         "opacity": 0.8
       },
       "encoding": {
@@ -169,7 +169,7 @@
             "title": "Country"
           },
           {
-            "field": "arrivals",
+            "field": "total_arrivals",
             "type": "quantitative",
             "title": "Arrivals",
             "format":",.0f"
