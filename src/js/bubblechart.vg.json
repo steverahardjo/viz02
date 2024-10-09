@@ -17,9 +17,9 @@
       }
     },
     "y": {
-      "field": "arrivals",
+      "field": "gdp_capita",
       "type": "quantitative",
-      "title": "Total Arrivals",
+      "title": "GDP per Capita",
       "scale": {
         "type": "linear"
       },
@@ -28,11 +28,11 @@
       }
     },
     "size": {
-      "field": "gdp_capita",
+      "field": "arrivals",
       "type": "quantitative",
-      "title":"GDP per Capita",
+      "title":"Total Arrivals",
       "scale": {
-        "range": [0,500]
+        "range": [100,1000]
       }
     },
     "color": {
@@ -40,7 +40,7 @@
       "type": "quantitative",
       "scale": {
         "domain": [0, 1000, 5000, 10000, 20000],
-        "range": ["blue", "lightblue", "white", "lightred", "red"]},
+        "range": ["blue", "darkblue", "black", "darkred", "red"]},
       "title": "Distance",
       "legend":null
     },
@@ -52,14 +52,14 @@
     ]
   },
   "config": {
-    "background": "dark",
+    "background": "white",
     "axis": {
-      "labelColor": "#ADEFD1FF",
-      "titleColor": "#ADEFD1FF"
+      "labelColor": "black",
+      "titleColor": "black"
     },
     "legend": {
-      "labelColor": "#ADEFD1FF",
-      "titleColor": "#ADEFD1FF"
+      "labelColor": "black",
+      "titleColor": "black"
     }
   }
 }

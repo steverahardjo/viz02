@@ -4,7 +4,7 @@
     "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/sankey.csv"
   },
   "height": 100,
-  "width": 750,
+  "width": 770,
   "title": {
     "text": "Heat map of Overall Gender and Destination Distribution",
     "color": "#FFFFFF"              
@@ -26,6 +26,7 @@
     "stroke": "darkred",
     "strokeWidth": 1
   },
+  
   "encoding": {
     "x": {
       "field": "soe",
@@ -50,10 +51,17 @@
       },
       "scale": {
         "domain": [41, 10000, 300000, 8400000, 11200000, 14000000],
-        "range": ["#e0bbff", "#c197d7", "#a373af", "#844f87", "#4a148c"]
-      }
+        "range": ["#f3e0ff", "#e0bbff", "#c197d7", "#844f87", "#4a148c"]      }
+    },
+    "tooltip": [
+        {
+          "field": "value",
+          "type": "nominal",
+          "title": "Arrivals",
+          "format":",.0f"
+        }
+      ]
     }
-  }
 }
 
 

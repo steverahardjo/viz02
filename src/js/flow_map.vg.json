@@ -4,6 +4,7 @@
   "background": "#e0f7fa",
   "width": 600,
   "height": 500,
+  "legend":{},
   "layer": [
     {
       "data": {
@@ -14,8 +15,7 @@
         }
       },
       "projection": {
-        "type": "mercator"
-      },
+        "type": "equalEarth"      },
       "mark": {
         "type": "geoshape",
         "stroke": "white",
@@ -44,8 +44,8 @@
           },
           "as": ["origin_longitude", "origin_latitude"]
         },
-        {"calculate": "101.9758", "as": "dest_longitude"},
-        {"calculate": "4.2105", "as": "dest_latitude"},
+        { "calculate": "101.9758", "as": "dest_longitude" },
+        { "calculate": "4.2105", "as": "dest_latitude" },
         {
           "filter": {
             "param": "dateSelection"
@@ -81,9 +81,6 @@
           }
         }
       ],
-      "projection": {
-        "type": "mercator"
-      },
       "mark": {
         "type": "rule",
         "color": "blueviolet"
@@ -160,7 +157,7 @@
         "size": {
           "field": "total_arrivals",
           "type": "quantitative",
-          "scale": {"type": "sqrt", "range": [20, 800]}
+          "scale": { "type": "sqrt", "range": [20, 800] }
         },
         "tooltip": [
           {
@@ -172,7 +169,7 @@
             "field": "total_arrivals",
             "type": "quantitative",
             "title": "Arrivals",
-            "format":",.0f"
+            "format": ",.0f"
           }
         ]
       }

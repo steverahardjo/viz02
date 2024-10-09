@@ -47,13 +47,13 @@
       "value": 4
     },
     "color": {
-      "value": "#FFC72C"
+      "value": "yellow"
     }
   },
   "width": 200,
   "height": 400,
   "config": {
-    "background": "#DA291C",
+    "background": "#c34138",
     "axis": {
       "labelColor": "#edefee",
       "titleColor": "#edefee"

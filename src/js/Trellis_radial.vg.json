@@ -17,15 +17,41 @@
     "layer": [
       {
         "mark": {
-          "type": "arc",
-          "innerRadius": 50,
-          "stroke": "#fff"
+          "type": "text",
+          "align": "center",
+          "baseline": "middle",
+          "fontSize": 16,
+          "color": "#ADEFD1FF"
         },
         "encoding": {
+          "text": {
+            "field": "Year",
+            "type": "ordinal"
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "arc",
+          "innerRadius": 60,
+          "stroke": "#fff"
+        },
+        "params": [
+          {
+            "name": "all",
+            "select": { "type": "point", "fields": ["Component"] },
+            "bind": "legend"
+          }
+        ],
+        "encoding": {
           "theta": {
-            "field": "Percentage",
+            "field": "RM",
             "type": "quantitative",
             "stack": true
+          },
+          "opacity": {
+            "condition": { "param": "all", "value": 1 },
+            "value": 0.1
           },
           "color": {
             "field": "Component",
@@ -41,7 +67,7 @@
             {
               "field": "Component",
               "type": "nominal",
-              "title": "Component"
+              "title": "Category"
             },
             {
               "field": "Percentage",
@@ -52,7 +78,7 @@
               "field": "RM",
               "type": "quantitative",
               "title": "Expenditure (RM)",
-              "format":",.0f"
+              "format": ",.0f"
             }
           ]
         }
@@ -74,9 +100,9 @@
       "labelColor": "#ADEFD1FF",
       "titleColor": "#ADEFD1FF"
     },
-    "title":{
-      "color":"#ADEFD1FF",
-      "fontSize":20
+    "title": {
+      "color": "#ADEFD1FF",
+      "fontSize": 20
     }
   }
 }
