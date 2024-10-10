@@ -24,7 +24,8 @@
   "mark": {
     "type": "rect",
     "stroke": "darkred",
-    "strokeWidth": 1
+    "strokeWidth": 1,
+    "cornerRadius":5
   },
   
   "encoding": {
