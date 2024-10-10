@@ -3,7 +3,7 @@
   "title": "Flow Map of Foreigners to Malaysia",
   "background": "#e0f7fa",
   "width": 600,
-  "height": 500,
+  "height": 400,
   "layer": [
     {
       "data": {
@@ -14,7 +14,8 @@
         }
       },
       "projection": {
-        "type": "equalEarth"
+        "type": "equalEarth",
+        "center": [102.5, 4.2]
       },
       "mark": {
         "type": "geoshape",
@@ -44,22 +45,29 @@
           },
           "as": ["origin_longitude", "origin_latitude"]
         },
-        { "calculate": "101.9758", "as": "dest_longitude" },
-        { "calculate": "4.2105", "as": "dest_latitude" },
         {
-          "filter": "datum.year == yearSelection"
+          "calculate": "year(datum.date)",
+          "as": "year"
+        },
+        {
+          "filter": {
+            "param": "yearSelection"
+          }
         }
       ],
       "params": [
         {
           "name": "yearSelection",
-          "value": 2020,
+          "value": { "year": 2020 },
+          "select": { "type": "point", "fields": ["year"] },
           "bind": {
-            "input": "range",
-            "min": 2020,
-            "max": 2024,
-            "step": 1,
-            "name": "Select Year"
+            "year": {
+              "input": "range",
+              "min": 2020,
+              "max": 2024,
+              "step": 1,
+              "name": "Select Year"
+            }
           }
         }
       ],
@@ -93,16 +101,6 @@
       },
       "transform": [
         {
-          "aggregate": [
-            {
-              "op": "sum",
-              "field": "arrivals",
-              "as": "total_arrivals"
-            }
-          ],
-          "groupby": ["country", "year"]
-        },
-        {
           "lookup": "country",
           "from": {
             "data": {
@@ -118,13 +116,13 @@
         },
         {
           "filter": {
-            "param": "dateSelection"
+            "param": "yearSelection"
           }
         }
       ],
       "mark": {
         "type": "circle",
-        "color": "orangered",
+        "color": "orange",
         "opacity": 0.8
       },
       "encoding": {
@@ -148,7 +146,7 @@
             "title": "Country"
           },
           {
-            "field": "total_arrivals",
+            "field": "arrivals",
             "type": "quantitative",
             "title": "Arrivals",
             "format": ",.0f"

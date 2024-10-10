@@ -57,11 +57,12 @@
             "field": "Component",
             "type": "nominal",
           "scale": {
-            "range": [
-               "#ff7f0e", "#8c564b", "#e377c2", "#7f7f7f", 
-              "#bcbd22", "#17becf", "#aec7e8", "#ffbb78", "#c5b0d5", "#c49c94", 
-              "#f7b6d2", "#c7c7c7", "#dbdb8d", "#9edae5"
-            ]
+          "range": [
+              "#d62728", "white",
+              "#9467bd", "blue",
+              "#8c564b",  "#e377c2", "#7f7f7f", "#bcbd22", "#17becf"
+          ]
+
           },
             "legend": {
               "title": "Component"
@@ -76,7 +77,8 @@
             {
               "field": "Percentage",
               "type": "quantitative",
-              "title": "Percentage (%)"
+              "title": "Percentage (%)",
+              "format":",.0f"
             },
             {
               "field": "RM",
