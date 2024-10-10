@@ -19,7 +19,7 @@
       "labelColor": "#FFFFFF",         
       "titleColor": "#FFFFFF"          
     },
-    "background": "#333333"            
+    "background": "dark"            
   },
   "mark": {
     "type": "rect",

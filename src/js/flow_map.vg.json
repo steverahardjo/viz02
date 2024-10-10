@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Flow Map of Foreigners to Malaysia",
   "background": "#e0f7fa",
-  "width": 600,
-  "height": 400,
+  "width": 800,
+  "height": 600,
   "layer": [
     {
       "data": {
@@ -15,7 +15,7 @@
       },
       "projection": {
         "type": "equalEarth",
-        "center": [102.5, 4.2]
+        "center": [400, 300]
       },
       "mark": {
         "type": "geoshape",
@@ -57,7 +57,7 @@
       ],
       "params": [
         {
-          "name": "yearSelection",
+          "name": "dateSelection",
           "value": { "year": 2020 },
           "select": { "type": "point", "fields": ["year"] },
           "bind": {
