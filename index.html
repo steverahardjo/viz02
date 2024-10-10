@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steve's Arrival Visualization</title>
+    <style>
+      h1 {
+        color: #9854cb;}
+    </style>
 
     <!-- Import Vega & Vega-Lite -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
@@ -40,7 +44,7 @@
 
         .row {
             display: flex;
-            justify-content: space-between; /* Changed to space-between for better alignment */
+            justify-content: space-between;
             margin-bottom: 20px;
         }
 
@@ -50,37 +54,19 @@
             width: auto;
             max-width: 100%;
             padding: 10px;
-            flex: 1; /* Allow the containers to grow */
-            margin: 0 10px; /* Maintain margins between containers */
+            flex: 1;
+            margin: 0 10px; 
         }
 
         .text-container {
             background: #666;
             padding: 10px;
             border-radius: 5px;
-            font-size: 18px; /* Adjusted font size for readability */
+            font-size: 18px; 
             color: #fff;
             margin-left: 10px;
-            flex: 1; /* Allow text container to grow */
+            flex: 1;
         }
-
-        #filter {
-            display: flex;
-            flex-direction: column;
-            margin-left: 20px;
-            background: #555;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        #filter input {
-            margin-bottom: 10px;
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-            width: 200px;
-        }
-
         #stats {
             display: flex;
             justify-content: space-between;
@@ -91,12 +77,12 @@
         .citation-container {
             background-color: #555;
             border-radius: 5px;
-            padding: 5px;
-            margin: 10px;
+            padding: 0px;
+            margin: 50px;
             text-align: center;
             font-size: 14px;
             color: #333;
-            width: 100%;
+            width: 90%;
         }
     </style>
 </head>
@@ -110,9 +96,22 @@
             <div class="row">
                 <div id="map" class="vis-container"></div>
                 <div class="text-container">
-                    According to records from Malaysia's Foreign Affairs, foreign nationals have entered Malaysia using various modes of transportation from January 2020 to June 2024, accumulating to 2 million records with Singapore citizens dominating the entries, as you can see from the flow map and the heat map (Johor). By looking at the overall timeline, we can see there are ticks in the overall flow of arrivals caused by the worldwide immigration restrictions due to COVID-19, and a gradual uptick from Eastern Europe caused by the Russo-Ukraine War. These numbers can be correlated to the 0.3% contribution of tourism to Malaysia's GDP.
+                  According to records from Malaysia's Foreign Affairs, foreign nationals have entered 
+                  Malaysia using various modes of transportation from <strong>January 2020 to June 2024</strong>, accumulating
+                   to <strong>2 million records</strong>, with <strong>Singapore citizens dominating the entries</strong>, 
+                   as you can see from the flow map and the heat map (Johor). 
+
+                  By looking at the overall timeline, we can see there are ticks in the overall flow of arrivals
+                  caused by the worldwide immigration restrictions due to <span style="background-color: blueviolet; padding: 2px;">COVID-19</span>,
+                   and a gradual 
+                  <strong>uptick from Eastern Europe</strong> caused by the <span style="background-color: blueviolet; padding: 2px;">Russo-Ukrainian War</span>. These numbers can be
+                  correlated to the <span style="background-color: blueviolet; padding: 2px;"><strong>0.3 % of GDP</strong></span>.
                     <br>
-                    These foreign arrivals are not just created by tourism demand alone but also by the continuous trend of Malaysians relying on foreign workers, mainly in the 3D sector (Dirty, Dangerous, and Demeaning) with 3.3 million right now officially documented in Malaysia, with many more entries illegally, which is around 15% compared to the Malaysian population where most of them are from Indonesia, Bangladesh, and Myanmar. This shows how dependent the Malaysian economy is on foreign influx.
+                    These foreign arrivals are not just created by tourism demand alone but also by the continuous trend of Malaysians relying on foreign workers, 
+                    mainly in the <span style="background-color: blueviolet; padding: 2px;">3D sector (Dirty, Dangerous, and Demeaning)</span> with <strong>3.3 million</strong> right now 
+                    officially documented in Malaysia, with many more entries illegally, which is around <span style="font-size: 1.5em;">15%</span> compared to the Malaysian population 
+                    where most of them are from <span style="background-color: blueviolet; padding: 2px;">Indonesia, Bangladesh, and Myanmar</span>
+                    This shows how dependent the Malaysian economy is on foreign influx.
                 </div>
             </div>
 
@@ -129,6 +128,26 @@
             <!-- Fourth Row: Bubble Chart -->
             <div class="row">
                 <div id="bubble" class="vis-container"></div>
+                <div class = "text-container">
+                  <p>
+                    Citizens from various countries visit Malaysia for several reasons, reflecting key factors that influence 
+                    their travel decisions. Geographical proximity plays a significant role, particularly with ,
+                    <span style="background-color: blueviolet; padding: 2px;">Singapore</span>,where 
+                    strong collaboration leads to daily intercommutes, especially in hotspots like <strong>Johor bahru</strong>. Similar patterns 
+                    can be seen with <span style="background-color: blueviolet; padding: 2px;">Thailand</span>. Cultural connections are also crucial, with Malaysia's rich heritage attracting tourists
+                     from China and India. Additionally, Malaysia is an appealing destination due to its unique climate and vibrant 
+                     culture, coupled with lower living costs. The Big Mac Index and GDP per Capita highlights this advantage, showing that Malaysia 
+                     offers more affordable living compared to countries <span style="background-color: blueviolet; padding: 2px;">Japan, South Korea, and Australia.</span>
+                     <p>USA are an outlier in term of tourist arrival , thi is because usually a large distance will equate with higher traveling cost which hinder
+                      tourist to come, but this is not the case for United States visitors</p>
+
+                      This increase in Malaysia's popularity as a holiday destination are reflected both in the high spending number especially in <thead>
+                        shopping and accoomodation section in the trellis donut chart. Overall, this trend also brought Malaysia to be placed First
+                        in term of foreigner arrival compare to other SEA countries, beating long standing first place, Thailand.
+                      </thead>
+                </p>
+              
+              </div>
             </div>
 
             <!-- Fifth Row: Trellis and Bump Charts -->

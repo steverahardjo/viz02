@@ -27,7 +27,7 @@
             "type": "linear"
           },
           "axis": {
-            "title": "Arrivals"
+            "title": "GDP per Capita"
           }
         },
         "size": {
