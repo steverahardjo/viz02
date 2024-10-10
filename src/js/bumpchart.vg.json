@@ -11,7 +11,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/bumpchart.csv"
   },
-  "width": 700,
+  "width": 550,
   "height":350,
   "mark": {
     "type": "line",

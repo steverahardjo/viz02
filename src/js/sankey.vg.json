@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/sankey.csv"
   },
-  "height": 2500,
+  "height": 200,
   "width": 1000,
   "title": {
     "text": "Heat map of Overall Gender and Destination Distribution",
