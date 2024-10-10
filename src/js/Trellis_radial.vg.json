@@ -45,7 +45,7 @@
         ],
         "encoding": {
           "theta": {
-            "field": "RM",
+            "field": "Percentage",
             "type": "quantitative",
             "stack": true
           },
@@ -56,9 +56,13 @@
           "color": {
             "field": "Component",
             "type": "nominal",
-            "scale": {
-              "scheme": "category20"
-            },
+          "scale": {
+            "range": [
+               "#ff7f0e", "#8c564b", "#e377c2", "#7f7f7f", 
+              "#bcbd22", "#17becf", "#aec7e8", "#ffbb78", "#c5b0d5", "#c49c94", 
+              "#f7b6d2", "#c7c7c7", "#dbdb8d", "#9edae5"
+            ]
+          },
             "legend": {
               "title": "Component"
             }
