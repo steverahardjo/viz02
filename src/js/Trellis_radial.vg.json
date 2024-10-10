@@ -12,7 +12,7 @@
     }
   },
   "spec": {
-    "width": "container",
+    "width": 230,
     "height": 200,
     "layer": [
       {
