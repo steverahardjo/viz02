@@ -19,7 +19,7 @@
       font-family: 'Open Sans', sans-serif;
       background-color: #333;
       color: #fff;
-      text-align: left;
+      text-align: justify;
       margin: 0;
       padding: 0;
     }
@@ -45,12 +45,24 @@
     }
 
     .vis-container {
-      margin: 0 10px; 
+      margin: 0 10px;
       background: #444;
-      border-radius: 5px; 
+      border-radius: 5px;
       width: auto;
       max-width: 100%;
       padding: 10px;
+    }
+
+    .text-container {
+      margin-left: 10px;
+      background: #666;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 17px;
+      color: #fff;
+      width: auto;
+      text-align: justify;
+      font-family: 'Open Sans', serif;
     }
 
     #filter {
@@ -77,10 +89,16 @@
       margin-top: 20px;
     }
 
-    #bump-trellis {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+    .citation-container {
+      background-color: #555;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 10px;
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+      width:100%;
+      display: inline-block;
     }
   </style>
 </head>
@@ -90,9 +108,26 @@
 
   <div class="main-container">
     <div class="container">
+      <!-- First Row: Map and Text -->
       <div class="row">
         <div id="map" class="vis-container"></div>
+        <div class="text-container">
+            According to records from Malaysia's Foreign Affairs, 
+            foreign nationals have entered Malaysia using various modes of transportation from the January 2020 to June 2024
+            accumulated to 2 Million records with Singapore citizens dominating the entries, as you can see from the flow map 
+            and the heat map(Johor). By looking at the overall timeline, we can see there are ticks in overall flow of arrival's
+            caused by the wordwide immigration restriction caused by COVID-19, a gradual uptick from Eastern Europe caused by the
+            Russo-Ukraine War. These number can be correlated to the 0.3% contribution of tourism to Malaysia's GDP. 
+            <br>
+            These foreign arrival are not just created by tourism demand alone but also by the continious trend of Malaysian's
+            relying on foreign worker mainly in  3D sector (Dirty, Dangerous, and Demeaning) with 3.3 million right now are officially
+            documented in Malaysia with much more entry illegaly, which is around 15 % compared to Malaysia population where most of them are 
+            from Indonesia, Bangladesh, and Myanmar. This show us how dependent Malaysian's economy to foreign incoming.
+        </div>
+        <div class="text-container">
+        </div>
       </div>
+      
       <div class="row">
         <div id="stream" class="vis-container"></div>
       </div>
@@ -103,17 +138,32 @@
         <div id="bubble" class="vis-container"></div>
       </div>
       <div class="row">
-        <div id="bump" class="vis-container"></div>
-      </div>
-      <div class="row">
-        <div id="trellis" class="vis-container"></div>
-      </div>
-      <div class="row">
-        <div id="isotype" class="vis-container"></div>
+        <div class="column-right">
+          <div class="row">
+            <div id="trellis" class="vis-container"></div>
+          </div>
+          <div class="row">
+            <div id="bump" class="vis-container"></div>
+          </div>
+        </div>
+        <div class="column-left">
+          <div id="isotype" class="vis-container"></div>
+        </div>
       </div>
     </div>
   </div>
 
+  <!-- Citation Container -->
+  <div class="citation-container">
+    <p>
+      Tourism Malaysia. (n.d.). Tourism Key Performance Indicators. Retrieved from https://data.gov.my
+      The Economist. (n.d.). Big Mac Index. Retrieved from https://github.com/TheEconomist/big-mac-data
+      DistanceFromTo. (n.d.). Distance from Malaysia. Retrieved from https://www.distancefromto.net/distance-from-malaysia-country
+      Department of Statistics Malaysia. (n.d.). Arrivals data. Retrieved from https://data.gov.my/data-catalogue/arrivals_soe
+    </p>
+  </div>
+
+  <!-- Script for Vega Embed 
   <script type="text/javascript">
     var map = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/flow_map.vg.json";
     var bubble = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/bubblechart.vg.json";
@@ -121,7 +171,7 @@
     var isotype = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/isotype.vg.json";
     var trellis = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/Trellis_radial.vg.json";
     var bump = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/bumpchart.vg.json";
-    var sankey = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/sankey.vg.json"; 
+    var sankey = "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/js/sankey.vg.json";
 
     vegaEmbed('#map', map, { "actions": false });
     vegaEmbed('#stream', streamgraph, { "actions": false });
@@ -129,10 +179,9 @@
     vegaEmbed('#bump', bump, { "actions": false });
     vegaEmbed('#trellis', trellis, { "actions": false });
     vegaEmbed('#isotype', isotype, { "actions": false });
-    vegaEmbed('#sankey', sankey, {"actions":false});
+    vegaEmbed('#sankey', sankey, { "actions": false });
+  -->
   </script>
 </body>
 
 </html>
-
-

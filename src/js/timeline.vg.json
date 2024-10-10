@@ -7,7 +7,7 @@
     "fontWeight": "bold",
     "color":"#ADEFD1FF"
   },
-  "width": 770,
+  "width": 720,
   "height": 250,
   "data": {
     "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/streamgraph.csv",
