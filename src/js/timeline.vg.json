@@ -8,7 +8,7 @@
     "color":"#DA70D6",
     "align": "center"
   },
-  "width": 1000,
+  "width": 800,
   "height": 450,
   "data": {
     "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/streamgraph.csv",
