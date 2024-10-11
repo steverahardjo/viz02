@@ -35,7 +35,7 @@
       "field": "Country",
       "type": "nominal",
       "scale": {
-        "range": ["blue", "#f58231", "#911eb4", "#fabed4", "#57FF33", "#ADEFD1FF"]
+        "range": ["blue", "#f58231", "yellow", "#fabed4", "#57FF33", "#ADEFD1FF"]
       }
     },
     "strokeWidth": {
