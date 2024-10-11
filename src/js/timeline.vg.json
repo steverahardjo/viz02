@@ -5,7 +5,8 @@
     "fontSize": 18,
     "anchor": "start",
     "fontWeight": "bold",
-    "color":"#DA70D6"
+    "color":"#DA70D6",
+    "align": "center"
   },
   "width": 1000,
   "height": 450,
