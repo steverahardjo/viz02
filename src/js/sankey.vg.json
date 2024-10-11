@@ -8,7 +8,7 @@
   "title": {
     "text": "Heat map of Overall Gender and Destination Distribution",
     "color": "darkviolet",
-    "fontSize": 18             
+    "fontSize": 23        
   },
   "config": {
     "view": {

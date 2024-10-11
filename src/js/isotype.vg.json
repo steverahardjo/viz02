@@ -5,7 +5,7 @@
     "text": "Big Mac Index between of Top 8 Countries on Arrivals",
     "color": "yellow",
     "fontWeight": "bold",
-    "fontSize": 18
+    "fontSize": 23
   },
   "data": {
     "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/new_isotype.csv"

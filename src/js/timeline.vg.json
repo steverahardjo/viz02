@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Average of Overall Arrivals by Sub-Region to Malaysia",
-    "fontSize": 18,
+    "fontSize": 23,
     "anchor": "middle",
     "fontWeight": "bold",
     "color":"#DA70D6"

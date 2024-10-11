@@ -130,7 +130,7 @@
     },
     "title": {
       "color": "darkviolet",
-      "fontSize": 18,
+      "fontSize": 23,
       "fontWeight":"bold"
     }
   }

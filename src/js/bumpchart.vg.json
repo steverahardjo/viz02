@@ -3,7 +3,7 @@
   "description": "Bump chart",
   "title": {
     "text": "SEA Countries Tourism Ranking (2019-2023)",
-    "fontSize": 18,
+    "fontSize": 23,
     "anchor": "start",
     "fontWeight": "bold",
     "color":"darkviolet"
