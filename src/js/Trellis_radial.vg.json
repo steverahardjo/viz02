@@ -107,8 +107,8 @@
       "titleColor": "#ADEFD1FF"
     },
     "title": {
-      "color": "darkviolet",
-      "fontSize": 20
+      "color": "#DA70D6",
+      "fontSize": 18
     }
   }
 }

@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/bubbleChart_pictograph.csv"
   },
-  "title":"Comparing Countries based on Distance, GDP, and Arrivals",
+  "title": "Comparing Countries based on Distance, GDP, and Arrivals",
   "width": 500,
   "height": 400,
   "layer": [
@@ -35,7 +35,8 @@
           "type": "quantitative",
           "title": "Total Arrivals",
           "scale": {
-            "range": [100, 500]
+            "range": [20, 50, 80, 200, 250, 400, 800],
+            "domain": [200, 1000, 20000, 500000, 1000000, 5000000, 15000000]
           }
         },
         "color": {
@@ -73,7 +74,7 @@
           "type": "quantitative"
         },
         "text": {
-          "value":"Singapore",
+          "value": "Singapore",
           "type": "nominal"
         }
       },
@@ -82,6 +83,39 @@
           "filter": "datum.name === 'Singapore'"
         }
       ]
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "orange",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "y": {
+          "datum": 11993,
+          "type": "quantitative",
+          "axis": {
+            "title": "Malaysia GDP per Capita"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "color": "orange",
+        "fontSize": 12,
+        "dy": -10
+      },
+      "encoding": {
+        "y": {
+          "datum": 11993,
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Malaysia's GDP per capita"
+        }
+      }
     }
   ],
   "config": {
@@ -96,7 +130,8 @@
     },
     "title": {
       "color": "darkviolet",
-      "fontSize": 20
+      "fontSize": 18,
+      "fontWeight":"bold"
     }
   }
 }
