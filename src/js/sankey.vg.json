@@ -7,7 +7,7 @@
   "width": 1100,
   "title": {
     "text": "Heat map of Overall Gender and Destination Distribution",
-    "color": "#FFFFFF"              
+    "color": "darkviolet"              
   },
   "config": {
     "view": {
