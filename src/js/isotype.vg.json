@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Isotype Chart representing Adjust Price per Country",
   "title": {
-    "text": "Big Mac Index between of Top 8 Countries on Arrivals",
+    "text": "Big Mac Index between Top 8 Countries on Arrivals",
     "color": "yellow",
     "fontWeight": "bold",
     "fontSize": 23
@@ -25,12 +25,11 @@
         "labelFontWeight": "bold",
         "titleFont": "sans-serif",
         "titleFontWeight": "bold",
-        "titleFontSize":16,
-        "labelFontSize":16
+        "titleFontSize": 16,
+        "labelFontSize": 16
       }
     },
     "y": {
-      "title":null,
       "field": "name",
       "type": "ordinal",
       "axis": {
@@ -64,9 +63,3 @@
     }
   }
 }
-
-
-
-
-
-  
