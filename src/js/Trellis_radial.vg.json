@@ -108,7 +108,8 @@
     },
     "title": {
       "color": "#DA70D6",
-      "fontSize": 23
+      "fontSize": 23,
+      "align":"center"
     }
   }
 }

@@ -1,7 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {"text":"Flow Map of Foreigners to Malaysia",
-            "fontSize":23},
+            "fontSize":23,
+          "color":"#DA70D6"},
   "background": "#e0f7fa",
   "width": 600,
   "height": 300,

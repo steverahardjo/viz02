@@ -6,7 +6,8 @@
     "fontSize": 23,
     "anchor": "start",
     "fontWeight": "bold",
-    "color":"darkviolet"
+    "color":"darkviolet",
+    "align":"center"
   },
   "data": {
     "url": "https://raw.githubusercontent.com/steverahardjo/viz02/refs/heads/main/src/dataset/bumpchart.csv"
